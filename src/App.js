@@ -34,7 +34,12 @@ import {HomeBash,BashIntro,BashConcept,BashConditional,BashLoops,BashVar} from "
 import {HomeCrypto,CryptoIntro,CryptoECC,CryptoRSA} from "./Content/IT/Crypto";
 import {LinxHome} from "./Content/IT/Lxc";
 import {HomeBatch,BatchIntro,BatchVar} from "./Content/IT/Batch";
-import {EthIntro,HomeEth,EthReconTools} from "./Content/IT/ETH";
+import {
+    EthIntro,
+    HomeEth,
+    EthReconTools,
+    EthMalware
+} from "./Content/IT/ETH";
 import {
     DsaIntro,
     HomeDSA,
@@ -291,6 +296,7 @@ class App extends React.Component{
                         {Element}
                     </Route>
 
+                    {/*************** Cryptography ***************/}
                     <Route path="/crypto">
                         <Route exact path="/crypto">
                             <Redirect to="/crypto/intro" />
@@ -309,8 +315,7 @@ class App extends React.Component{
                         <HomeCrypto/>
                     </Route>
 
-                {/*Start the c++ Programming Guide*/}
-
+                    {/*************** Start the C++ Programming Guide ***************/}
                     <Route path="/cpp">
                         <Route exact path="/cpp">
                             <Redirect to="/cpp/intro" />
@@ -326,7 +331,7 @@ class App extends React.Component{
                         <HomeCpp/>
                     </Route>
 
-                {/*Start the Ruby Programming Guide*/}
+                    {/*************** Start the Ruby Programming Guide ***************/}
                     <Route path="/ruby"> 
                         <Route exact path="/ruby">
                             <Redirect to="/ruby/intro" />
@@ -347,7 +352,8 @@ class App extends React.Component{
                         </Switch>
                         <HomeRuby/>
                     </Route>
-                {/*Start the Bash Programming Guide*/}
+
+                    {/*************** Start the Bash Programming Guide ***************/}
                     <Route path="/bash">
                         <Route exact path="/bash">
                             <Redirect to="/bash/intro" />
@@ -371,7 +377,8 @@ class App extends React.Component{
                         </Switch>
                         <HomeBash/>
                     </Route>
-                    {/*Start the PHP Programming Guide*/}
+
+                    {/*************** Start the PHP Programming Guide ***************/}
                     <Route path="/php">
                         <Route exact path="/php">
                             <Redirect to="/php/intro" />
@@ -383,8 +390,8 @@ class App extends React.Component{
                         </Switch>
                         <HomePHP/>
                     </Route>
-                    {/*Batch Programming*/}
 
+                    {/*************** Batch Programming ***************/}
                     <Route path="/batch">
                         <Route exact path="/batch">
                             <Redirect to="/batch/intro" />
@@ -400,7 +407,7 @@ class App extends React.Component{
                         <HomeBatch/>
                     </Route>
                     
-                    {/*ML*/}
+                    {/**************** Machine Learning  **************/}
                     <Route path="/machine/statistics"> 
                         <Route exact path="/machine/statistics">
                             <Redirect to="/machine/statistics/intro" />
@@ -437,6 +444,7 @@ class App extends React.Component{
                         </Switch>
                         <HomeMac/>
                     </Route>
+
                     <Route path="/machine/neural"> 
                         <Route exact path="/machine/neural">
                             <Redirect to="/machine/neural/introduction" />
@@ -453,10 +461,9 @@ class App extends React.Component{
                             </Route>                     
                         </Switch>
                         <HomeNeural/>
-
                     </Route>
 
-                    {/*Java Programming Starts here*/}
+                    {/************* Java Programming Starts here ************/}
                     <Route path="/java"> 
                         <Route exact path="/java">
                             <Redirect to="/java/intro" />
@@ -475,14 +482,14 @@ class App extends React.Component{
                         <HomeJava/>
                     </Route>
 
-                    {/* Linux */}
+                    {/************* Linux *************/}
                     <Route path="/linuxcommand"> 
                         <Route exact path="/linuxcommand">
                             <Redirect to="/linuxcommand/home" />
                         </Route>
                         <LinxHome/>
                     </Route>
-                {/*WEB3 FOLDER*/}
+                    {/************* Web3 FOLDER *************/}
                     <Route path="/web3/solidity"> 
                         <Route exact path="/web3/solidity">
                             <Redirect to="/web3/solidity/intro" />
@@ -503,7 +510,7 @@ class App extends React.Component{
                         </Switch>
                         <HomeSol/>
                     </Route>
-                {/*WEB FOLDER*/}
+                {/************* Web Development FOLDER *************/}
                     <Route path="/web/sql"> 
                         <Route exact path="/web/sql">
                             <Redirect to="/web/sql/home" />
@@ -521,7 +528,7 @@ class App extends React.Component{
                         </Switch>
                         <HomeSql/>
                     </Route>
-                 {/*React */}
+                 {/************* React *************/}
                     <Route path="/web/react"> 
                         <Route exact path="/web/react">
                             <Redirect to="/web/react/home" />
@@ -533,7 +540,7 @@ class App extends React.Component{
                         </Switch>
                         <HomeReact/>
                     </Route>
- 					{/*ETH*/}					
+ 					{/************* Ethical Hacking *************/}					
  					<Route path="/eth"> 
                         <Route exact path="/eth">
                             <Redirect to="/eth/intro" />
@@ -542,13 +549,16 @@ class App extends React.Component{
                             <Route path="/eth/intro">
                                 <EthIntro/>
                             </Route>
-                             <Route path="/eth/recon/tools">
+                            <Route path="/eth/recon/tools">
                                 <EthReconTools/>
+                            </Route>
+                            <Route path="/eth/malware">
+                                <EthMalware />
                             </Route>
                         </Switch>
                         <HomeEth/>
                     </Route>
-                    {/* Data Structure and algorithm*/}
+                    {/************* Data Structure and algorithm *************/}
                     <Route path="/dsa"> 
                         <Route exact path="/dsa">
                             <Redirect to="/dsa/intro" />

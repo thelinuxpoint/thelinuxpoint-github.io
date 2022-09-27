@@ -44,13 +44,13 @@ function Author(){
                      var x = document.createElement('a');
                      x.href="https://www.youtube.com/channel/UCVYclxop0utX10SW0kOK9Ig";
                      x.click();}}>
-                <img src="youtube.dark.min.svg" alt="youtube" style={{'height':'30px','width':'30px'}}/>
+                <img src="https://thelinuxpoint.github.io/youtube.dark.min.svg" alt="youtube" style={{'height':'30px','width':'30px'}}/>
             </div>
             <div draggable={false} className="" title="Visit Github" onClick={function(){
                     var x = document.createElement('a');
                      x.href="https://github.com/thelinuxpoint";
                      x.click();}}>
-                <img src="github.dark.min.svg" alt="github" style={{'height':'30px','width':'30px'}}/>
+                <img src="https://thelinuxpoint.github.io/github.dark.min.svg" alt="github" style={{'height':'30px','width':'30px'}}/>
             </div>
         </div>
     );
@@ -61,7 +61,7 @@ function FlapEth(props){
 		<>
 		<div className="flap-eth">
 			<div className="display">
-				<img src="cyber-s-2.gif" style={{width:"180px",height:"150px"}}/>
+				<img src="https://thelinuxpoint.github.io/cyber-s-2.gif" style={{width:"180px",height:"150px"}}/>
 			</div>			
 			<hr/>
 			<div className="topic">
@@ -69,19 +69,19 @@ function FlapEth(props){
 			</div>
 			<hr/>
 			<div className="topic">
-				<NavLink onClick={slideIN} to="/eth/intro" className="descr"><p>Threats and Vulnerability</p></NavLink>
+				<NavLink onClick={slideIN} to="/eth/threats" className="descr"><p>Threats and Vulnerability</p></NavLink>
 			</div>
 			<hr/>
 			<div className="topic">
-				<NavLink onClick={slideIN} to="/eth/intro" className="descr"><p>Types of Malware</p></NavLink>
+				<NavLink onClick={slideIN} to="/eth/malware" className="descr"><p>Types of Malware</p></NavLink>
 			</div>
 			<hr/>
 			<div className="topic">
-				<NavLink onClick={slideIN} to="/eth/intro" className="descr"><p>Generate Malware</p></NavLink>
+				<NavLink onClick={slideIN} to="/eth/generate-malware" className="descr"><p>Generate Malware</p></NavLink>
 			</div>
 			<hr/>
 			<div className="topic">
-				<NavLink onClick={slideIN} to="/eth/intro" className="descr"><p>Social Engineering</p></NavLink>
+				<NavLink onClick={slideIN} to="/eth/social-engineering" className="descr"><p>Social Engineering</p></NavLink>
 			</div>
 			<hr/>
 			<div className="topic">
