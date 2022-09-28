@@ -170,11 +170,12 @@ function EthMalware(props){
 	
 		<>
 			<Helmet>
-        		<title>Reconnaissance Tools</title>
-        		<meta name="description" content="Learn what are tools related to reconnaissance" />
+        		<title>Types of Malware</title>
+        		<meta name="description" content="learn various types of malware around us" />
 	    	</Helmet>
 			<br/>
-			<Head name=""/>
+			<Head name="What is Malware"/>
+			
 		</>
 	);
 }

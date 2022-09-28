@@ -220,7 +220,7 @@ function Showup(argument) {
 				<div className="show-up-inner-0">
 					Data Structure & algorithm
 					<div>
-						<img alt="..." src="dsa.png" style={{width:"220px",height:"180px"}}/>
+						<img alt="..." src="dsa.svg" style={{width:"220px",height:"180px"}}/>
 					</div>
 					<NavLink className="descr" to="/dsa"><button>  Go ❱❱ </button></NavLink>
 				</div>

@@ -48,7 +48,7 @@ function FlapDsa(props){
 		<>
 		<div className="flap-dsa">
 			<div className="display">
-				<img src="https://thelinuxpoint.github.io/dsa.png" style={{width:"200px",height:"150px"}}/>
+				<img src="https://thelinuxpoint.github.io/dsa.svg" style={{width:"200px",height:"150px"}}/>
 			</div>			
 			<hr/>
 			<div className="topic">
