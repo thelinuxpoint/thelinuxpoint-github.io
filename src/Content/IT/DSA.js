@@ -75,19 +75,23 @@ function FlapDsa(props){
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/queue" className="descr"><p>Stack</p></NavLink>
+					<NavLink to="/dsa/stack" className="descr"><p>Stack</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/queue" className="descr"><p>Deque</p></NavLink>
+					<NavLink to="/dsa/deque" className="descr"><p>Deque</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/queue" className="descr"><p>Linked List</p></NavLink>
+					<NavLink to="/dsa/linkedlist" className="descr"><p>Linked List</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/queue" className="descr"><p>Hash Map</p></NavLink>
+					<NavLink to="/dsa/hashmap" className="descr"><p>Hash Map</p></NavLink>
+				</div>
+				<hr />
+				<div className="topic">
+					<NavLink to="/dsa/set" className="descr"><p>Set</p></NavLink>
 				</div>
 				<hr />
 			</div>
@@ -294,7 +298,9 @@ function DsaIntro(props){
 			
 			"/>
 			<Head name="What is a Data Structure?"/>
-			<Mark desc="
+			<Mark desc="Data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+				Depending on your requirement and project, it is important to choose the right data structure for your project. For example, 
+				if you want to store data sequentially in the memory, then you can go for the Array data structure.
 			"/>
 			<br/>
 			<Navigator left="" right="/dsa/queue"/>
@@ -302,6 +308,62 @@ function DsaIntro(props){
 
 	);
 }
+/*
+	[#] Queue Data Structure
+*/ 
+function DSAQueue(props){
+	window.scrollTo(0,0);
+
+	return(
+		<>
+			<br/>
+			<Helmet>
+        		<title>Queue Data Structure</title>
+        		<meta name="description" content="queue data structure" />
+	      	</Helmet>
+	      	<Head name="Queue"/>
+
+		</>
+	);
+}
+/*
+	[#] Linked List Data Structure
+*/ 
+function DSALinkedList(props){
+	window.scrollTo(0,0);
+
+	return(
+		<>
+			<br/>
+			<Helmet>
+        		<title>Linked List Data Structure</title>
+        		<meta name="description" content="linked list data structure and its algorithms" />
+	      	</Helmet>
+	      	<Head name="Linked List"/>
+	      	<Mark desc="A linked list is a kind of data structure where every node is linked with the other ,this is similar to a chain.
+	      		the tlp:cyan Node contains fields such as tlp:cyan Data and pointer to the next Node. following is the representation of the data structure
+
+	      	"/>
+			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
+
+	      	<Head name="Creating Linked list"/>
+
+	      	<Head name="Inserting Element in Linked List"/>
+	      	<Head name="Deleting Element from Linked List"/>
+	      	<Head name="Sorting Linked List"/>
+	      	<Head name="The Runner Technique"/>
+	      	<Head name="Detect Loop in Linked List"/>
+ 
+		</>
+	);
+}
+
+
+
+
+
+
+
 /*
 	[#] DSA Sorting : Rank Sort
 
@@ -632,6 +694,7 @@ export {
 
 	DsaIntro,
 	HomeDSA,
+	// all Sorting algorithm
 	DSARankSort,
 	DSASelectionSort,
 	DSABubbleSort,
@@ -642,7 +705,10 @@ export {
 	DSARadixSort,
 	DSACountingSort,
 	DSABucketSort,
-	DSAShellSort
+	DSAShellSort,
+	// all data structure 
+	DSAQueue,
+	DSALinkedList
 
 
 };

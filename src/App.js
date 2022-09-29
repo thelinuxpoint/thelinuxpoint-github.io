@@ -53,7 +53,11 @@ import {
     DSARadixSort,
     DSACountingSort,
     DSABucketSort,
-    DSAShellSort
+    DSAShellSort,
+
+    DSAQueue,
+    DSALinkedList
+
 } from "./Content/IT/DSA";
 
 //ML folder
@@ -567,6 +571,7 @@ class App extends React.Component{
                             <Route path="/dsa/intro">
                                 <DsaIntro/>
                             </Route>
+                        {/*  Sorting Algorithms */}
                             <Route path="/dsa/sort/rank">
                                 <DSARankSort/>
                             </Route>
@@ -600,6 +605,14 @@ class App extends React.Component{
                             <Route path="/dsa/sort/heap">
                                 <DSAHeapSort/>
                             </Route>
+                            {/*  Data Structures  */}
+                            <Route path="/dsa/queue">
+                                <DSAQueue/>
+                            </Route>
+                            <Route path="/dsa/linkedlist">
+                                <DSALinkedList/>
+                            </Route>
+
                         </Switch>
                         <HomeDSA/>
                     </Route>
