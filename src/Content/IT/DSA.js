@@ -9,6 +9,7 @@ import Table from "../../Components/Table"
 import Shell from "../../Components/Shell";
 import Head from "../../Components/Header";
 import {Helmet} from 'react-helmet';
+import Codes from "../../Components/Codes";
 
 function slideIN(){
 	if(window.innerHeight>window.innerWidth){
@@ -347,7 +348,10 @@ function DSALinkedList(props){
 			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
 
 	      	<Head name="Creating Linked list"/>
-	      		
+	      	<Mark desc="Understanding the structure of a linked list node is the key to having a grasp on it.
+				Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works."/>
+	      	<Codes lang="C++" cc="0529d2ac74ebf4cbda919d9e43aecf7f"/>
+
 	      	<Head name="Inserting Element in Linked List"/>
 
 	      	<Head name="Deleting Element from Linked List"/>
@@ -455,11 +459,8 @@ function DSASelectionSort(props){
 			<div align="center"><img style={{borderRadius:"10px",height:"300px", width:"300px"}} src="https://thelinuxpoint.github.io/selection_sort.gif" className="put-in-side-code"/></div>
 			<Mark desc="Let us consider an array which is unsorted. the following steps will be followed in this
 			sorting algorithm."/>
-			<Head name="Equivalent C++ Code"/>
-			<div className="put-in-side-code"><ReactEmbedGist  gist="thelinuxpoint/e39a95138142abfd0a291874775fc016"/></div>
-			
-			<Head name="Equivalent Python Code"/>
-			<div className="put-in-side-code"><ReactEmbedGist gist="thelinuxpoint/4fe606909e0f2f9d587e3c427301cdab"/></div>
+			<Head name="Equivalent Code"/>
+			<Codes lang="C++ Python" cc = "e39a95138142abfd0a291874775fc016 4fe606909e0f2f9d587e3c427301cdab"/>
 			<br/>
 			<Navigator left="/dsa/sort/rank" right="/dsa/sort/insertion"/>
 		</>

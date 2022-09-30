@@ -738,3 +738,23 @@ th{
 	user-select: none;
 	opacity: 0.68;
 }
+.code-lang-holder{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+
+}
+.code-lang-holder div{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	height: 50px;
+	width: 100px;
+	cursor: pointer;
+}
+.code-lang-holder p{
+	padding: 10px;
+}

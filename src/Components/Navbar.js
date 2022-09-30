@@ -67,7 +67,7 @@ function fix_dpi() {
     canvas.setAttribute('width', style_width * dpi);
 }
 
-    var particle_count = 45,
+    var particle_count = 30,
         particles = [],
         couleurs   = ["orange", "cyan", "yellowgreen","magenta"];
     function Particle()
