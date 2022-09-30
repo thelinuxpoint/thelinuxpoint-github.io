@@ -347,7 +347,7 @@ function DSALinkedList(props){
 	      		the tlp:cyan Node contains fields such as tlp:cyan Data and pointer to the next Node. following is the representation of the data structure
 
 	      	"/>
-			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
+			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
 
 	      	<Head name="Creating Linked list"/>
 	      	<Mark desc="Understanding the structure of a linked list node is the key to having a grasp on it.
@@ -355,8 +355,8 @@ function DSALinkedList(props){
 	      	<Codes lang="C++ Python" cc="0529d2ac74ebf4cbda919d9e43aecf7f 7fdc3b974bae3e5b021e0749caca8f10"/>
 
 	      	<Head name="Insertion in Linked List"/>
-			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist-i.svg" className="put-in-side-code"/></div>
-			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist-i-e.svg" className="put-in-side-code"/></div>
+			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist-i.svg" className="put-in-side-code"/></div>
+			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist-i-e.svg" className="put-in-side-code"/></div>
 
 	      	<Head name="Deletion in Linked List"/>
 	      	<Head name="Sorting Linked List"/>
