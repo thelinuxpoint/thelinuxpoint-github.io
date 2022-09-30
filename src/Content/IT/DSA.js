@@ -356,6 +356,7 @@ function DSALinkedList(props){
 
 	      	<Head name="Insertion in Linked List"/>
 			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist-i.svg" className="put-in-side-code"/></div>
+			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist-i-e.svg" className="put-in-side-code"/></div>
 
 	      	<Head name="Deletion in Linked List"/>
 	      	<Head name="Sorting Linked List"/>
