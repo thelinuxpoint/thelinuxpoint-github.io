@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="250mm"
+   width="290mm"
    height="100mm"
-   viewBox="0 0 250 100"
+   viewBox="0 0 290 100"
    version="1.1"
    id="svg5"
    inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"
@@ -24,9 +24,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="425"
-     inkscape:cy="229"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="662.55906"
+     inkscape:cy="251.73001"
      inkscape:window-width="1366"
      inkscape:window-height="740"
      inkscape:window-x="0"
@@ -44,36 +44,35 @@
        id="rect1178-7"
        width="30.075474"
        height="3.0287139"
-       x="165.84605"
-       y="58.965759"
+       x="172.644"
+       y="50"
+       ry="1.514357" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       id="rect1178-7-4"
+       width="30.075474"
+       height="3.0287139"
+       x="215.42026"
+       y="50"
        ry="1.514357" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
        id="rect1178"
        width="30.075474"
        height="3.0287139"
-       x="51.650452"
-       y="57.803524"
+       x="58.55117"
+       y="50.374557"
        ry="1.514357" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
        id="rect1178-2"
        width="30.075474"
        height="3.0287139"
-       x="108.14876"
-       y="58.223675"
+       x="101.32743"
+       y="50.374557"
        ry="1.514357" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-       id="rect1178-2-9"
-       width="30.075474"
-       height="3.0287139"
-       x="49.432899"
-       y="-226.37952"
-       ry="1.514357"
-       transform="rotate(89.781617)" />
-    <rect
-       style="fill:#0064ff;stroke-width:0.264583;fill-opacity:1"
+       style="fill:#0064ff;fill-opacity:1;stroke-width:0.264583"
        id="rect111"
        width="42.77626"
        height="31.298645"
@@ -81,7 +80,7 @@
        y="35.42028"
        ry="3.2764509" />
     <rect
-       style="fill:#0064ff;stroke-width:0.264583;fill-opacity:1"
+       style="fill:#0064ff;fill-opacity:1;stroke-width:0.264583"
        id="rect111-3"
        width="42.77626"
        height="31.298645"
@@ -89,7 +88,7 @@
        y="34.725235"
        ry="3.2764509" />
     <rect
-       style="fill:#0064ff;stroke-width:0.264583;fill-opacity:1"
+       style="fill:#0064ff;fill-opacity:1;stroke-width:0.264583"
        id="rect111-6"
        width="42.77626"
        height="31.298645"
@@ -97,7 +96,7 @@
        y="34.350677"
        ry="3.2764509" />
     <rect
-       style="fill:#0064ff;stroke-width:0.264583;fill-opacity:1"
+       style="fill:#0064ff;fill-opacity:1;stroke-width:0.264583"
        id="rect111-7"
        width="42.77626"
        height="31.298645"
@@ -203,14 +202,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.65709px;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-       x="213.08549"
-       y="90.125763"
+       x="251.50671"
+       y="53.202312"
        id="text1425"
        transform="scale(1.0029272,0.99708135)"><tspan
          sodipodi:role="line"
          id="tspan1423"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#ffffff;stroke-width:0.264583"
-         x="213.08549"
-         y="90.125763">NULL</tspan></text>
+         x="251.50671"
+         y="53.202312">NULL</tspan></text>
   </g>
 </svg>

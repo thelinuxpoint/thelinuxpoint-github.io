@@ -344,15 +344,19 @@ function DSALinkedList(props){
 	      		the tlp:cyan Node contains fields such as tlp:cyan Data and pointer to the next Node. following is the representation of the data structure
 
 	      	"/>
-			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
+			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
 
 	      	<Head name="Creating Linked list"/>
-
+	      		
 	      	<Head name="Inserting Element in Linked List"/>
+
 	      	<Head name="Deleting Element from Linked List"/>
 	      	<Head name="Sorting Linked List"/>
 	      	<Head name="The Runner Technique"/>
 	      	<Head name="Detect Loop in Linked List"/>
+
+	      	<Navigator left="/dsa/deque" right="/dsa/hashmap"/>
+
  
 		</>
 	);
