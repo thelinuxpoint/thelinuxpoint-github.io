@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {NavLink} from "react-router-dom";
 import ReactEmbedGist from 'react-embed-gist';
 import ReactMarkdown from 'react-markdown'
@@ -37,6 +37,7 @@ function Codes(props){
 				}>
 				<p>{j}</p>
 			</div>
+
 		);
 
 		count+=1
@@ -48,8 +49,9 @@ function Codes(props){
 
 	}
 
-	
-
+	useEffect(() => {   
+			document.getElementById(cc[0]).click() 
+		});
 	return (
 
 		<>
@@ -57,6 +59,7 @@ function Codes(props){
 				{lang}
 			</div>
 			{codeblock}
+
 		</>
 	);
 }

@@ -338,7 +338,9 @@ function DSALinkedList(props){
 			<br/>
 			<Helmet>
         		<title>Linked List Data Structure</title>
-        		<meta name="description" content="linked list data structure and its algorithms" />
+        		<meta name="description" content=" what is linked list? ,structure , insertion in linkedlist
+        		, Deletion in linkedlist , sorting a linked list, detect loop in linked list, partisioning a linked list
+        		" />
 	      	</Helmet>
 	      	<Head name="Linked List"/>
 	      	<Mark desc="A linked list is a kind of data structure where every node is linked with the other ,this is similar to a chain.
@@ -350,15 +352,18 @@ function DSALinkedList(props){
 	      	<Head name="Creating Linked list"/>
 	      	<Mark desc="Understanding the structure of a linked list node is the key to having a grasp on it.
 				Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works."/>
-	      	<Codes lang="C++" cc="0529d2ac74ebf4cbda919d9e43aecf7f"/>
+	      	<Codes lang="C++ Python" cc="0529d2ac74ebf4cbda919d9e43aecf7f 7fdc3b974bae3e5b021e0749caca8f10"/>
 
-	      	<Head name="Inserting Element in Linked List"/>
+	      	<Head name="Insertion in Linked List"/>
+			<div align="center"><img style={{borderRadius:"10px", width:"500px"}} src="https://thelinuxpoint.github.io/linkedlist-i.svg" className="put-in-side-code"/></div>
 
-	      	<Head name="Deleting Element from Linked List"/>
+	      	<Head name="Deletion in Linked List"/>
 	      	<Head name="Sorting Linked List"/>
 	      	<Head name="The Runner Technique"/>
 	      	<Head name="Detect Loop in Linked List"/>
-
+	      	<Head name="Partision"/>
+	      	<Codes lang="C++" cc="a352f7d9b493a7081d9dbba97fd0b950"/>
+	      	<br/>
 	      	<Navigator left="/dsa/deque" right="/dsa/hashmap"/>
 
  
@@ -499,8 +504,7 @@ function DSABubbleSort(props){
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-5.svg" className="put-in-side-code"/></div>
 			<Mark desc="Here we have a SORTED ARRAY"/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-6.svg" className="put-in-side-code"/></div>
-			
-			<div className="put-in-side-code"><ReactEmbedGist gist="thelinuxpoint/e83e85572b961ec9928861d3702e809d"/></div>
+			<Codes lang="Python" cc="e83e85572b961ec9928861d3702e809d"/>
 
 			<Head name="Complexity"/>
 			<Table head="Time Complexity" colsp={3} desc="- Worst | - Average | - Best |;- O(n^2) | - O(n^2) | - O(n) |"/>

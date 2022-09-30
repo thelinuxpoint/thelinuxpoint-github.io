@@ -6,8 +6,8 @@
 }
 body {
     background: #161923;
-    font-family: Open Sans ;
-    word-spacing: 2px;
+    font-family: Nunito;
+    /*word-spacing: 2px;*/
     color: white;
     background-attachment: fixed;
     background-position: center;
