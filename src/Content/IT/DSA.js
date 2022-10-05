@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import {NavLink} from "react-router-dom";
 import ReactEmbedGist from 'react-embed-gist';
 import ReactMarkdown from 'react-markdown'
+import { Utterances } from 'utterances-react-component'
 
 import Navigator from "../../Components/Navigator";
 import Mark from "../../Components/Markdown";
@@ -15,13 +16,13 @@ function slideIN(){
 	if(window.innerHeight>window.innerWidth){
 		document.getElementsByClassName('flap-dsa')[0].style.left="-300px";
 		if(document.getElementById("hambure")){
-                	let c = document.getElementById("hambure");
-                	c.id="hamburx";
+            let c = document.getElementById("hambure");
+            c.id="hamburx";
 
-            	}else if(document.getElementById("hamburx")){
-                	let c = document.getElementById("hamburx");
-                	c.id="hambure";
-            	}
+       	}else if(document.getElementById("hamburx")){
+          	let c = document.getElementById("hamburx");
+           	c.id="hambure";
+        }
 	}
 }
 
@@ -72,27 +73,27 @@ function FlapDsa(props){
 			<hr/>
 			<div hidden="true" id="dsa-1">
 				<div className="topic">
-					<NavLink to="/dsa/queue" className="descr"><p>Queue</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/queue" className="descr"><p>Queue</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/stack" className="descr"><p>Stack</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/stack" className="descr"><p>Stack</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/deque" className="descr"><p>Deque</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/deque" className="descr"><p>Deque</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/linkedlist" className="descr"><p>Linked List</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/linkedlist" className="descr"><p>Linked List</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/hashmap" className="descr"><p>Hash Map</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/hashmap" className="descr"><p>Hash Map</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/set" className="descr"><p>Set</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/set" className="descr"><p>Set</p></NavLink>
 				</div>
 				<hr />
 			</div>
@@ -112,23 +113,23 @@ function FlapDsa(props){
 			<hr/>
 			<div hidden="true" id="dsa-2">
 				<div className="topic">
-					<NavLink to="/dsa/binarytree" className="descr"><p>Heap</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/binarytree" className="descr"><p>Heap</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/binarytree" className="descr"><p>Binary Tree</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/binarytree" className="descr"><p>Binary Tree</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/avltree" className="descr"><p>AVL Tree</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/avltree" className="descr"><p>AVL Tree</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/btree" className="descr"><p>B Tree</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/btree" className="descr"><p>B Tree</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/b+tree" className="descr"><p>B+ Tree</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/b+tree" className="descr"><p>B+ Tree</p></NavLink>
 				</div>
 				<hr />
 			</div>
@@ -148,11 +149,11 @@ function FlapDsa(props){
 			<hr/>
 			<div hidden="true" id="dsa-3">
 				<div className="topic">
-					<NavLink to="/dsa/graph" className="descr"><p>Graph Data Structure</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/graph" className="descr"><p>Graph Data Structure</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/graph" className="descr"><p>BFS algorithm</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/graph" className="descr"><p>BFS algorithm</p></NavLink>
 				</div>
 				<hr/>
 			</div>
@@ -174,47 +175,47 @@ function FlapDsa(props){
 			<div hidden="true" id="sorting">
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/rank" className="descr"><p>Rank Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/rank" className="descr"><p>Rank Sort</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/sort/selection" className="descr"><p>Selection Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/selection" className="descr"><p>Selection Sort</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/sort/insertion" className="descr"><p>Insertion Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/insertion" className="descr"><p>Insertion Sort</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/sort/bubble" className="descr"><p>Bubble Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/bubble" className="descr"><p>Bubble Sort</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/sort/shell" className="descr"><p>Shell Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/shell" className="descr"><p>Shell Sort</p></NavLink>
 				</div>
 				<hr/>
 				<div className="topic">
-					<NavLink to="/dsa/sort/merge" className="descr"><p>Merge Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/merge" className="descr"><p>Merge Sort</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/quick" className="descr"><p>Quick Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/quick" className="descr"><p>Quick Sort</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/counting" className="descr"><p>Counting Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/counting" className="descr"><p>Counting Sort</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/radix" className="descr"><p>Radix Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/radix" className="descr"><p>Radix Sort</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/bucket" className="descr"><p>Bucket Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/bucket" className="descr"><p>Bucket Sort</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
-					<NavLink to="/dsa/sort/heap" className="descr"><p>Heap Sort</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/sort/heap" className="descr"><p>Heap Sort</p></NavLink>
 				</div>
 			</div>
 			<hr/>
@@ -224,7 +225,6 @@ function FlapDsa(props){
 					if (document.getElementById('toggle-g-algo').style.transform=="rotateZ(90deg)"){
 						document.getElementById('toggle-g-algo').style.transform="rotateZ(0deg)";
 						document.getElementById('g-algo').hidden=true;
-
 					}else{
 						document.getElementById('toggle-g-algo').style.transform="rotateZ(90deg)";
 						document.getElementById('g-algo').hidden=false;
@@ -367,7 +367,6 @@ function DSALinkedList(props){
 	      	<br/>
 	      	<Navigator left="/dsa/deque" right="/dsa/hashmap"/>
 
- 
 		</>
 	);
 }
@@ -469,6 +468,11 @@ function DSASelectionSort(props){
 			<Codes lang="C++ Python" cc = "e39a95138142abfd0a291874775fc016 4fe606909e0f2f9d587e3c427301cdab"/>
 			<br/>
 			<Navigator left="/dsa/sort/rank" right="/dsa/sort/insertion"/>
+			<Utterances
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="SelectionSort"
+            	theme="dark-blue"
+          	/>
 		</>
 
 	);
@@ -512,6 +516,11 @@ function DSABubbleSort(props){
 
 			<br/>
 			<Navigator left="/dsa/sort/insertion" right="/dsa/sort/shell"/>
+			<Utterances
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="BubbleSort"
+            	theme="dark-blue"
+          	/>
 		</>
 
 	);
@@ -534,7 +543,11 @@ function DSAInsertionSort(props){
 			<Mark desc=""/>
 			<br/>
 			<Navigator left="/dsa/sort/selection" right="/dsa/sort/bubble"/>
-
+			<Utterances
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="InsertionSort"
+            	theme="dark-blue"
+          	/>
 		</>
 	);
 
@@ -557,7 +570,11 @@ function DSAMergeSort(props){
 			<Mark desc=""/>
 			<br/>
 			<Navigator left="/dsa/sort/shell" right="/dsa/sort/quick"/>
-
+			<Utterances
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="MergeSort"
+            	theme="dark-blue"
+          	/>
 		</>
 	);
 
@@ -649,7 +666,11 @@ function DSACountingSort(props){
 			<Mark desc=""/>
 			<br/>
 			<Navigator left="/dsa/sort/quick" right="/dsa/sort/radix"/>
-
+			<Utterances
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="CountingSort"
+            	theme="dark-blue"
+          	/>
 		</>
 	);
 
@@ -683,7 +704,7 @@ function DSABucketSort(props){
 */
 function DSAHeapSort(props){
 	window.scrollTo(0,0)
-
+	
 	return(
 		<>
 			<br/>
@@ -694,8 +715,15 @@ function DSAHeapSort(props){
 			<Head name="Heap Sort"/>
 			<Mark desc=""/>
 			<br/>
+			
 			<Navigator left="/dsa/sort/bucket" right=""/>
+			<Utterances
 
+            	repo="thelinuxpoint/thelinuxpoint.github.io"
+            	issueTerm="HeapSort"
+            	theme="dark-blue"
+          	/>
+			
 		</>
 	);
 
