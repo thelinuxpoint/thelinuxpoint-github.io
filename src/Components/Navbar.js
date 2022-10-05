@@ -69,7 +69,7 @@ function fix_dpi() {
 
     var particle_count = 30,
         particles = [],
-        couleurs   = ["orange", "cyan", "yellowgreen","magenta"];
+        couleurs   = ["#2F6CE5", "#2F6CE5", "#2F6CE5","#2F6CE5"];
     function Particle()
     {
 

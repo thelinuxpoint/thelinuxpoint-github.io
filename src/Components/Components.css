@@ -192,7 +192,7 @@
 	border-radius: 10px;
 	/*border: 5px solid ghostwhite;*/
 	padding: 20px;
-	box-shadow: 0px 2px 15px 2px #bcbdd0/*rgba(255, 255, 0, 0.7)*/;
+	box-shadow: 2px 2px 15px 1px #000000/*rgba(255, 255, 0, 0.7)*/;
 	transition: transform 1s;  	
 	user-select: none;
 }
