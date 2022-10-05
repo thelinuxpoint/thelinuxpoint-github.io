@@ -56,7 +56,8 @@ import {
     DSAShellSort,
 
     DSAQueue,
-    DSALinkedList
+    DSALinkedList,
+    DSAHeap
 
 } from "./Content/IT/DSA";
 
@@ -611,6 +612,9 @@ class App extends React.Component{
                             </Route>
                             <Route path="/dsa/linkedlist">
                                 <DSALinkedList/>
+                            </Route>
+                            <Route path="/dsa/heap">
+                                <DSAHeap/>
                             </Route>
 
                         </Switch>

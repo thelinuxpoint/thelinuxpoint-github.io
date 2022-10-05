@@ -113,7 +113,7 @@ function FlapDsa(props){
 			<hr/>
 			<div hidden="true" id="dsa-2">
 				<div className="topic">
-					<NavLink onClick={slideIN} to="/dsa/binarytree" className="descr"><p>Heap</p></NavLink>
+					<NavLink onClick={slideIN} to="/dsa/heap" className="descr"><p>Heap</p></NavLink>
 				</div>
 				<hr />
 				<div className="topic">
@@ -323,6 +323,8 @@ function DSAQueue(props){
         		<meta name="description" content="queue data structure" />
 	      	</Helmet>
 	      	<Head name="Queue"/>
+	      	<br/>
+			<Navigator left="/dsa/intro" right="/dsa/stack"/>
 
 		</>
 	);
@@ -370,12 +372,34 @@ function DSALinkedList(props){
 		</>
 	);
 }
+/*
+	[#] Heap Data Structure
+*/ 
+
+function DSAHeap(props){
+	window.scrollTo(0,0);
+
+	return(
+		<>
+			<br/>
+			<Helmet>
+        		<title>Heap Data Structure</title>
+        		<meta name="description" content="" />
+	      	</Helmet>
+	      	<Head name="Heap Data Structure"/>
+	      	
+	      	<br/>
+	      	<Navigator left="/dsa/deque" right="/dsa/hashmap"/>
+
+		</>
+	);
+}
 
 
 
 
 
-
+// ################################################################
 
 /*
 	[#] DSA Sorting : Rank Sort
@@ -456,12 +480,12 @@ function DSASelectionSort(props){
         		<meta name="description" content="Learn about selection sorting" />
 	      	</Helmet>
 			<Head name="Selection Sort"/>
+			<div align="center"><img style={{borderRadius:"10px",height:"300px", width:"300px"}} src="https://thelinuxpoint.github.io/selection_sort.gif" className="put-in-side-code"/></div>
 			<Mark desc="The Selection Sort is an another sorting technique in which
 			we find largest or smallest element in an array and move it to extreme right or left. tlp:br tlp:br 
 			The following is the example of finding the smallest and moving it to left
 			"/>
 			<br/>
-			<div align="center"><img style={{borderRadius:"10px",height:"300px", width:"300px"}} src="https://thelinuxpoint.github.io/selection_sort.gif" className="put-in-side-code"/></div>
 			<Mark desc="Let us consider an array which is unsorted. the following steps will be followed in this
 			sorting algorithm."/>
 			<Head name="Equivalent Code"/>
@@ -492,20 +516,22 @@ function DSABubbleSort(props){
         		<meta name="description" content="Learn about bubble sorting technique" />
 	      	</Helmet>
 			<Head name="Bubble Sort"/>
+			<div align="center"><img style={{borderRadius:"10px",height:"300px", width:"300px"}} src="https://thelinuxpoint.github.io/selection_sort.gif" className="put-in-side-code"/></div>
+
 			<Mark desc="Bubble sort is the one of the most simplest way to sort a array of unsorted elements,
 			this sorting algorithm compares each element to right and swaps it if less than left one. tlp:br tlp:br 
 			let us understand this with a Example ,Given is a unsorted array we will start with index i = 0 and compare index i + 1
 			"/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-u.svg" className="put-in-side-code"/></div>
-			<Mark desc="tlp:red compare 4 and 2 since 4 is greater then 2 swaping occurs here."/>
+			<Mark desc="compare 4 and 2 since 4 is greater then 2 swaping occurs here."/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-1.svg" className="put-in-side-code"/></div>
-			<Mark desc="tlp:red compare 4 and 3 since 4 is greater then 3 swaping occurs here."/>
+			<Mark desc="compare 4 and 3 since 4 is greater then 3 swaping occurs here."/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-2.svg" className="put-in-side-code"/></div>
-			<Mark desc="tlp:red compare 4 and 1 since 4 is greater then 1 swaping occurs here. now if we compare 4 and 5 it is already sorted so here we complete one iteration but our array is not sorted so we will repeat the steps."/>
+			<Mark desc="compare 4 and 1 since 4 is greater then 1 swaping occurs here. now if we compare 4 and 5 it is already sorted so here we complete one iteration but our array is not sorted so we will repeat the steps."/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-3.svg" className="put-in-side-code"/></div>
 			<Mark desc="since 2 and 3 is already sorted then compare 3 and 1 since 3 is greater then 1 swaping occurs here. now rest of the elements is sorted after 3. so here we complete our second iteration."/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-4.svg" className="put-in-side-code"/></div>
-			<Mark desc="tlp:red compare 2 and 1 since 2 is greater then 1 swaping occurs here. here we complete our third iteration after this operation all array elements are sorted."/>
+			<Mark desc="compare 2 and 1 since 2 is greater then 1 swaping occurs here. here we complete our third iteration after this operation all array elements are sorted."/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-5.svg" className="put-in-side-code"/></div>
 			<Mark desc="Here we have a SORTED ARRAY"/>
 			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/bubble-6.svg" className="put-in-side-code"/></div>
@@ -746,7 +772,8 @@ export {
 	DSAShellSort,
 	// all data structure 
 	DSAQueue,
-	DSALinkedList
+	DSALinkedList,
+	DSAHeap
 
 
 };
