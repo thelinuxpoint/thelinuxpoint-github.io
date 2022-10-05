@@ -5,13 +5,15 @@
     /*scrollbar-width: thin;*/
 }
 body {
+
     background: #161923;
     font-family: Nunito;
+    background: url(https://thelinuxpoint.github.io/Hexagon.svg);
     /*word-spacing: 2px;*/
     color: white;
     background-attachment: fixed;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
     scroll-behavior: smooth;
