@@ -6,9 +6,8 @@
 }
 body {
 
-    background: #161923;
     font-family: Nunito;
-    background: url(https://thelinuxpoint.github.io/Hexagon.svg);
+    background: url(https://thelinuxpoint.github.io/xagon.svg) #161923; 
     /*word-spacing: 2px;*/
     color: white;
     background-attachment: fixed;
