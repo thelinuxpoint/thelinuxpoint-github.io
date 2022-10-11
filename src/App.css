@@ -923,20 +923,29 @@ canvas{
     }
     @keyframes stroke {
         0% {
+                        stroke-width: 3;
+
             fill: rgba(72, 138, 20, 0);
-            stroke: lime;
+            stroke: #365fa0;
+            /*stroke: lime;*/
             stroke-dashoffset: 25%;
             stroke-dasharray: 0 50%;
             stroke-width: 2;
         }
         70% {
+                        stroke-width: 3;
+
             fill: rgba(72, 138, 20, 0);
-            stroke: cyan;
+                        stroke: #365fa0;
+
+            /*stroke: cyan;*/
         }
         90% {
             fill: rgba(72, 138, 20, 0);
-            stroke: crimson;
+            /*stroke: crimson;*/
             stroke-width: 3;
+                        stroke: #365fa0;
+
         }
         100% {
             fill: greenyellow;

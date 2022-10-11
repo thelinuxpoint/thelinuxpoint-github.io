@@ -759,3 +759,42 @@ th{
 .code-lang-holder p{
 	padding: 10px;
 }
+
+.login-tlp{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	margin-top: 30vh;
+	grid-template-rows: 50px 50px 50px;
+	grid-row-gap: 20px;
+}
+#google-signup{
+	color: black;
+	background-color: white;
+	border-radius: 2px;
+	height: 50px;
+	width: 400px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-origin: border-box;
+}
+#github-signup{
+	color: black;
+	background-color: white;
+	border-radius: 2px;
+	text-align: center;
+	height: 50px;
+	width: 400px;
+
+}
+#email-signup{
+	background-color: white;
+	border-radius: 2px;
+	height: 50px;
+	width: 400px;
+
+}

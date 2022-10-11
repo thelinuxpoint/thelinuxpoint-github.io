@@ -67,7 +67,7 @@ function fix_dpi() {
     canvas.setAttribute('width', style_width * dpi);
 }
 
-    var particle_count = 50,
+    var particle_count = 40,
         particles = [],
         couleurs   = ["#2F6CE5", "orange", "yellowgreen","magenta"];
     function Particle()
@@ -264,7 +264,7 @@ function NavBar(props) {
 
                 <div className="account">
                     <div className="account-inner" onClick={props.handler}>
-                        <p tooltip="Sign UP/Sign IN" >Log in</p>
+                        <NavLink to="/login" className="descr"><p tooltip="Sign UP/Sign IN" >Log in</p></NavLink>
                     </div>
                 </div>
 
@@ -273,190 +273,190 @@ function NavBar(props) {
         );
 }
 
-function Login(props) {
+// function Login(props) {
 
-    var is_m = window.innerWidth<window.innerHeight;
-	if (is_m) {var clas="login-m"} else { var clas="login"}
+//     var is_m = window.innerWidth<window.innerHeight;
+// 	if (is_m) {var clas="login-m"} else { var clas="login"}
     
-    return(
-        <div className={clas} hidden={true}>
-            <img alt="..." className="close-btn" src="https://thelinuxpoint.github.io/close.png" onClick={function(){
-                        if (is_m){
-                            var x=document.getElementsByClassName('login-m')[0];
-                            x.hidden=true;
+//     return(
+//         <div className={clas} hidden={true}>
+//             <img alt="..." className="close-btn" src="https://thelinuxpoint.github.io/close.png" onClick={function(){
+//                         if (is_m){
+//                             var x=document.getElementsByClassName('login-m')[0];
+//                             x.hidden=true;
 
-                        }else{
-                            var x=document.getElementsByClassName('login')[0];
-                            x.hidden=true;
-                        }
+//                         }else{
+//                             var x=document.getElementsByClassName('login')[0];
+//                             x.hidden=true;
+//                         }
                
-            }}/>
-            <div className="account-inter">
-                <div>
-                    <p className="account-info">Create Account</p>
-                </div>
-                <div> 
-                    <fieldset className="user-legend">
-                        <legend > Full Name </legend>
-                        <input className="input-1" placeholder="Full Name"/>   
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset className="user-legend">
-                        <legend > Email </legend>
-                        <input className="input-3" onClick={
-                            function (argument) {
-                                document.getElementsByClassName("input-3")[0].value=""
-                                document.getElementsByClassName("input-3")[0].placeholder="Email example: john@gmail.com"                                
-                                document.getElementsByClassName("input-3")[0].style.color="#000"
-                                document.getElementsByClassName("input-3")[0].style.fontFamily="IBM Plex Sans"
-                            }
-                        } placeholder="Email example: john@gmail.com"/>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset className="user-legend">
-                        <legend > Password </legend>
-                        <input className="input-4" placeholder="Password atleast 6 characters" type="password" /> 
-                        <img alt="..." className="seenoo" src="https://thelinuxpoint.github.io/sidebarc.svg" onClick={function(){
-                            var y=document.getElementsByClassName('seenoo')[0];
-                            var x=document.getElementsByClassName('input-4')[0];
+//             }}/>
+//             <div className="account-inter">
+//                 <div>
+//                     <p className="account-info">Create Account</p>
+//                 </div>
+//                 <div> 
+//                     <fieldset className="user-legend">
+//                         <legend > Full Name </legend>
+//                         <input className="input-1" placeholder="Full Name"/>   
+//                     </fieldset>
+//                 </div>
+//                 <div>
+//                     <fieldset className="user-legend">
+//                         <legend > Email </legend>
+//                         <input className="input-3" onClick={
+//                             function (argument) {
+//                                 document.getElementsByClassName("input-3")[0].value=""
+//                                 document.getElementsByClassName("input-3")[0].placeholder="Email example: john@gmail.com"                                
+//                                 document.getElementsByClassName("input-3")[0].style.color="#000"
+//                                 document.getElementsByClassName("input-3")[0].style.fontFamily="IBM Plex Sans"
+//                             }
+//                         } placeholder="Email example: john@gmail.com"/>
+//                     </fieldset>
+//                 </div>
+//                 <div>
+//                     <fieldset className="user-legend">
+//                         <legend > Password </legend>
+//                         <input className="input-4" placeholder="Password atleast 6 characters" type="password" /> 
+//                         <img alt="..." className="seenoo" src="https://thelinuxpoint.github.io/sidebarc.svg" onClick={function(){
+//                             var y=document.getElementsByClassName('seenoo')[0];
+//                             var x=document.getElementsByClassName('input-4')[0];
 
-                            if (new URL(y.src).pathname=="https://thelinuxpoint.github.io/sidebarc.svg"){
-                                y.src="https://thelinuxpoint.github.io/sidebar.svg"
-                                x.type=""
-                            }else{
-                                x.type="password" 
-                                y.src="https://thelinuxpoint.github.io/sidebarc.svg"
-                            }
-                        }}/> 
-                    </fieldset>
-                </div>
+//                             if (new URL(y.src).pathname=="https://thelinuxpoint.github.io/sidebarc.svg"){
+//                                 y.src="https://thelinuxpoint.github.io/sidebar.svg"
+//                                 x.type=""
+//                             }else{
+//                                 x.type="password" 
+//                                 y.src="https://thelinuxpoint.github.io/sidebarc.svg"
+//                             }
+//                         }}/> 
+//                     </fieldset>
+//                 </div>
                
-                <div className="create-outer">
-                    <button className="create" onClick={SignIn}>Create Account</button>
-                </div>
+//                 <div className="create-outer">
+//                     <button className="create" onClick={SignIn}>Create Account</button>
+//                 </div>
 
-                <button className="go-but" onClick={GAuthenticate}><img alt="..." src="go.svg"/></button>
+//                 <button className="go-but" onClick={GAuthenticate}><img alt="..." src="go.svg"/></button>
 
-                <p className="have">Already have an account? <span onClick={function(){
-                     if (is_m){
+//                 <p className="have">Already have an account? <span onClick={function(){
+//                      if (is_m){
                            
-                        var y=document.getElementsByClassName('login-m')[0];
-                        y.hidden=true;
-                        var x=document.getElementsByClassName('signup-m')[0];
-                        x.hidden=false;
+//                         var y=document.getElementsByClassName('login-m')[0];
+//                         y.hidden=true;
+//                         var x=document.getElementsByClassName('signup-m')[0];
+//                         x.hidden=false;
 
-                    }else{
-                        var y=document.getElementsByClassName('login')[0];
-                        y.hidden=true;
-                        var x=document.getElementsByClassName('signup')[0];
-                        x.hidden=false;
-                    }
-                }} className="signin">Sign In</span></p>
+//                     }else{
+//                         var y=document.getElementsByClassName('login')[0];
+//                         y.hidden=true;
+//                         var x=document.getElementsByClassName('signup')[0];
+//                         x.hidden=false;
+//                     }
+//                 }} className="signin">Sign In</span></p>
             
-                <div className="login-div-1">
-                    <img alt="..." src="https://thelinuxpoint.github.io/awe.gif"/>
-                </div>
+//                 <div className="login-div-1">
+//                     <img alt="..." src="https://thelinuxpoint.github.io/awe.gif"/>
+//                 </div>
 
-                <div className="login-div-2">
-                    <img alt="..." src="https://thelinuxpoint.github.io/logo-built_black.png"/>
-                </div>
-            </div>
-        </div>
+//                 <div className="login-div-2">
+//                     <img alt="..." src="https://thelinuxpoint.github.io/logo-built_black.png"/>
+//                 </div>
+//             </div>
+//         </div>
    
-    );
-}
+//     );
+// }
 
-class Signup extends React.Component {
-    constructor(props){
-        super(props)
-    }
+// class Signup extends React.Component {
+//     constructor(props){
+//         super(props)
+//     }
 
-    render(){       
-        var is_m = window.innerWidth<window.innerHeight;
-        if (is_m) {var clas="signup-m"} else { var clas="signup"}
+//     render(){       
+//         var is_m = window.innerWidth<window.innerHeight;
+//         if (is_m) {var clas="signup-m"} else { var clas="signup"}
 
-        return(
-        <div className={clas} hidden={true}>
-            <img alt="..." className="close-btn" src="https://thelinuxpoint.github.io/close.png" onClick={function(){
-                if(is_m){
-                    var x=document.getElementsByClassName('signup-m')[0];
-                    x.hidden=true;
-                }else{
-                    var x=document.getElementsByClassName('signup')[0];
-                    x.hidden=true;
+//         return(
+//         <div className={clas} hidden={true}>
+//             <img alt="..." className="close-btn" src="https://thelinuxpoint.github.io/close.png" onClick={function(){
+//                 if(is_m){
+//                     var x=document.getElementsByClassName('signup-m')[0];
+//                     x.hidden=true;
+//                 }else{
+//                     var x=document.getElementsByClassName('signup')[0];
+//                     x.hidden=true;
 
-                }
-            }}/>
-            <div className="account-inter">
-                <div>
-                    <p className="signin-info">Sign In</p>
-                </div>
+//                 }
+//             }}/>
+//             <div className="account-inter">
+//                 <div>
+//                     <p className="signin-info">Sign In</p>
+//                 </div>
 
-                <div> 
-                    <fieldset className="user-legend">
-                        <legend > Email </legend>
-                        <input className="input-6" placeholder="  Email example: john@gmail.com"/>
-                    </fieldset>
-                </div>
+//                 <div> 
+//                     <fieldset className="user-legend">
+//                         <legend > Email </legend>
+//                         <input className="input-6" placeholder="  Email example: john@gmail.com"/>
+//                     </fieldset>
+//                 </div>
 
-                <div> 
-                    <fieldset className="user-legend">
-                        <legend > Password </legend>
-                        <input className="input-7" placeholder="  Password" type="password"/>  
-                        <img alt="..." className="seenoo" src="https://thelinuxpoint.github.io/sidebarc.svg" onClick={function(){
-                            var y=document.getElementsByClassName('seenoo')[0];
-                            var x=document.getElementsByClassName('input-7')[0];
-                            console.log(y.src)
-                            if (new URL(y.src).pathname=="https://thelinuxpoint.github.io/sidebarc.svg"){
-                                y.src="https://thelinuxpoint.github.io/sidebar.svg"
-                                x.type=""
-                            }else{
-                                x.type="password" 
-                                y.src="https://thelinuxpoint.github.io/sidebarc.svg"
-                            }
-                        }}/> 
-                    </fieldset>
-                </div>
+//                 <div> 
+//                     <fieldset className="user-legend">
+//                         <legend > Password </legend>
+//                         <input className="input-7" placeholder="  Password" type="password"/>  
+//                         <img alt="..." className="seenoo" src="https://thelinuxpoint.github.io/sidebarc.svg" onClick={function(){
+//                             var y=document.getElementsByClassName('seenoo')[0];
+//                             var x=document.getElementsByClassName('input-7')[0];
+//                             console.log(y.src)
+//                             if (new URL(y.src).pathname=="https://thelinuxpoint.github.io/sidebarc.svg"){
+//                                 y.src="https://thelinuxpoint.github.io/sidebar.svg"
+//                                 x.type=""
+//                             }else{
+//                                 x.type="password" 
+//                                 y.src="https://thelinuxpoint.github.io/sidebarc.svg"
+//                             }
+//                         }}/> 
+//                     </fieldset>
+//                 </div>
 
-                <div className="create-outer">
-                    <button className="create" onClick={SignIn}>Sign In</button>
-                </div>
+//                 <div className="create-outer">
+//                     <button className="create" onClick={SignIn}>Sign In</button>
+//                 </div>
 
-                <button className="go-but" onClick={GAuthenticate}><img alt="..." src="https://thelinuxpoint.github.io/go.svg"/></button>
+//                 <button className="go-but" onClick={GAuthenticate}><img alt="..." src="https://thelinuxpoint.github.io/go.svg"/></button>
 
-                <p className="have" >Don’t have an account yet? <span onClick={
-                    function(){
-                    if (is_m){
+//                 <p className="have" >Don’t have an account yet? <span onClick={
+//                     function(){
+//                     if (is_m){
                            
-                        var y=document.getElementsByClassName('login-m')[0];
-                        y.hidden=false;
-                        var x=document.getElementsByClassName('signup-m')[0];
-                        x.hidden=true;
+//                         var y=document.getElementsByClassName('login-m')[0];
+//                         y.hidden=false;
+//                         var x=document.getElementsByClassName('signup-m')[0];
+//                         x.hidden=true;
 
-                    }else{
-                        var y=document.getElementsByClassName('login')[0];
-                        y.hidden=false;
-                        var x=document.getElementsByClassName('signup')[0];
-                        x.hidden=true;
-                    }
+//                     }else{
+//                         var y=document.getElementsByClassName('login')[0];
+//                         y.hidden=false;
+//                         var x=document.getElementsByClassName('signup')[0];
+//                         x.hidden=true;
+//                     }
                        
-                    }
-                } className="signin">Create new for free!</span></p>            
-                <p className="forget">Forgot Password?</p>
+//                     }
+//                 } className="signin">Create new for free!</span></p>            
+//                 <p className="forget">Forgot Password?</p>
 
-                <div className="login-div-1">
-                    <img alt="..." src="https://thelinuxpoint.github.io/awe.gif"/>
-                </div>
+//                 <div className="login-div-1">
+//                     <img alt="..." src="https://thelinuxpoint.github.io/awe.gif"/>
+//                 </div>
 
-                <div className="login-div-2">
-                    <img alt="..." src="https://thelinuxpoint.github.io/logo-built_black.png"/>
-                </div>
-            </div>
-        </div>
-        );
-    }
-}
+//                 <div className="login-div-2">
+//                     <img alt="..." src="https://thelinuxpoint.github.io/logo-built_black.png"/>
+//                 </div>
+//             </div>
+//         </div>
+//         );
+//     }
+// }
 
-export {NavBar,Login,Signup}
+export {NavBar}

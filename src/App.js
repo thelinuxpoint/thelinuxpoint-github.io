@@ -5,13 +5,15 @@ import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 // import { NavLink } from "react-router-dom";
 import { HashRouter,StaticRouter,Redirect } from "react-router-dom";
 
+import LoginPage from "./Components/LoginPage";
+
 
 // Personal Imports ####################################
 // CSS
 import './Components/Components.css';
 import './Content/Content.css';
 // Components
-import { NavBar,Login,Signup } from "./Components/Navbar";
+import { NavBar } from "./Components/Navbar";
 import { Helmet } from 'react-helmet';
 
 import Flap from "./Components/Flap";
@@ -276,8 +278,7 @@ class App extends React.Component{
                     <br/>
                     <br/>
                     <Flap/>
-                    <Login/>
-                    <Signup/>
+
 					<UserInfo/>
                 </>
 
@@ -320,6 +321,17 @@ class App extends React.Component{
                         <HomeCrypto/>
                     </Route>
 
+
+                    <Route path="/login">
+                        <Route exact path="/login">
+                            <Redirect to="/login" />
+                        </Route>
+                        <Switch>
+                            <Route path="/login">
+                                <LoginPage/>
+                            </Route>
+                        </Switch>
+                    </Route>
                     {/*************** Start the C++ Programming Guide ***************/}
                     <Route path="/cpp">
                         <Route exact path="/cpp">
