@@ -573,7 +573,7 @@ th{
 	
 	.mark-down{
 		display: block;
-		background-color:rgba(50, 50, 50, 0.5);
+		background-color: rgba(14, 42, 71, 0.5);
 		padding: 10px;margin-top: 10px;
 		border-radius: 10px;
 		margin-left: 5px;
@@ -638,7 +638,8 @@ th{
 }
 @media(orientation: landscape){
 	.mark-down{
-		background-color:rgba(50, 50, 50, 0.5);
+				background-color: rgba(14, 42, 71, 0.5);
+
 		margin-left: 280px;	
 		margin-top: 10px;
 		border-radius: 10px;
