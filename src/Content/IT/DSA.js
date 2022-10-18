@@ -349,8 +349,7 @@ function DSALinkedList(props){
 	      		the tlp:cyan Node contains fields such as tlp:cyan Data and pointer to the next Node. following is the representation of the data structure
 
 	      	"/>
-			<div align="center"><img style={{borderRadius:"10px", width:"400px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
-
+			<div align="center"><img style={{borderRadius:"10px", width:"400px",height:"200px"}} src="https://thelinuxpoint.github.io/linkedlist.svg" className="put-in-side-code"/></div>
 	      	<Head name="Creating Linked list"/>
 	      	<Mark desc="Understanding the structure of a linked list node is the key to having a grasp on it.
 				Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works."/>

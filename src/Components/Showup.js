@@ -19,6 +19,7 @@ function Showup(argument) {
 		<div className='show-up-desc'>
 			<p className="" >A programming language is a computer language that is used by programmers (developers) to communicate with computers. It is a set of instructions written in any specific language to perform a specific task. Our Programming section contains various general purpose languages.</p>
 		</div>
+		<br/>
 		{/* <div className="skills-inner" align="center">
 			<div>
 				<img src="prog.svg"/ >
@@ -111,6 +112,7 @@ function Showup(argument) {
 		<div className='show-up-desc'>
 			<p className="">The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks. </p>
 		</div>
+		<br/>
 
 		{/* <div className="skills-inner" align="center">
 			<div>
@@ -192,6 +194,8 @@ function Showup(argument) {
 		<div className='show-up-desc'>
 			<p className="">Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data.</p>
 		</div>
+				<br/>
+
 		{/* <div className="skills-inner" align="center">
 			<div>
 				<img src="IT.svg"/ >
@@ -223,6 +227,13 @@ function Showup(argument) {
 						<img alt="..." src="dsa.svg" style={{width:"220px",height:"180px"}}/>
 					</div>
 					<NavLink className="descr" to="/dsa"><button>  Go ❱❱ </button></NavLink>
+				</div>
+				<div className="show-up-inner-0">
+					Algorithms
+					<div>
+						<img alt="..." src="dsa.svg" style={{width:"220px",height:"180px"}}/>
+					</div>
+					<NavLink className="descr" to="/daa"><button>  Go ❱❱ </button></NavLink>
 				</div>
 				<div className="show-up-inner-0">
 					Ethical Hacking
