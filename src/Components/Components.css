@@ -188,7 +188,7 @@
 }
 .show-up-inner-0{
 	display: inline-block;
-
+	background: linear-gradient(rgba(10,60,150,0.5),rgba(16,19,23, 0.5));
 
 	height: 250px;
 	width: 250px;
