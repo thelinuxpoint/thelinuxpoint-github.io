@@ -188,14 +188,14 @@
 }
 .show-up-inner-0{
 	display: inline-block;
-	background-color: rgba(15, 75, 155, 0.8) ;	
+
 
 	height: 250px;
-	width: 300px;
+	width: 250px;
 	border-radius: 10px;
 	/*border: 5px solid ghostwhite;*/
 	padding: 20px;
-	box-shadow: 2px 2px 15px 2px royalblue;/*rgba(255, 255, 0, 0.7)*/;
+	/*box-shadow: 2px 2px 15px 2px grey;*/
 	transition: transform 1s;  	
 	user-select: none;
 }
@@ -281,11 +281,7 @@
 	box-shadow: 0px 2px 15px 2px lightcyan;
 }
 .block-deck{
-		/*background: rgba(30,37,64,0.4);*/
-		margin-top:30px;
-
-		/*border-radius:25px;*/
-		/*box-shadow: 0px 0px 25px 1px black;*/
+		margin-top:60px;
 }
 .show-up-out{	
 	width: 100vw;
@@ -803,4 +799,19 @@ th{
 	height: 50px;
 	width: 400px;
 
+}
+.navtop{
+	width: 100vw;
+	background-color: #2F6CE5;
+	position: fixed;
+	height: 100px;
+	box-shadow: 0px 0px 20px 1px rgba(2, 2, 0, 0.4);
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+.account:hover{
+	border-bottom: 2px solid white;
 }
