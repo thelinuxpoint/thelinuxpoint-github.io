@@ -754,15 +754,7 @@ canvas{
         visibility: hidden;
     }
     /*#######################################################*/
-    .account {
-        position: absolute;
-        right: 2vw;
-    }
-    .account-inter {
-        color: black;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+    
     .close-btn {
         border-radius: 50%;
         background-color: #222;
@@ -997,23 +989,6 @@ canvas{
         padding: 10px;
     }
 
-    .navbar {
-        position: fixed;
-        top: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        align-items: center;
-        background: #282d3f;
-        height: 70px;
-        width: 100vw;
-        margin-left: 0px;
-        margin-right: 0px;
-        border-bottom-right-radius: 10px ;
-        border-bottom-left-radius: 10px ;
-        filter: drop-shadow(2px 2px 0.8rem black);
-    }
     .flap-box {
         overflow-y: scroll;
         overflow-x: scroll;

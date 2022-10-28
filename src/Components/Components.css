@@ -188,8 +188,8 @@
 }
 .show-up-inner-0{
 	display: inline-block;
-	background: linear-gradient(rgba(10,60,150,0.5),rgba(16,19,23, 0.5));
-
+	background: linear-gradient(rgba(10,60,190,0.8),rgba(16,20,90, 0.5));
+	background: url(https://thelinuxpoint.github.io/Hexagon.svg);
 	height: 250px;
 	width: 250px;
 	border-radius: 10px;
@@ -198,8 +198,19 @@
 	/*box-shadow: 2px 2px 15px 2px grey;*/
 	transition: transform 1s;  	
 	user-select: none;
+	animation: lolpol 1s infinite alternate;
+	background-position: center;
+	background-size: cover;
 }
 
+@keyframes lolpol{
+	from{
+		background-size: 200%;
+	}
+	to{
+		background-size: 100%;
+	}
+}
 .show-up-inner-0 button{
 	cursor: pointer;
 	border-style: none;
@@ -593,49 +604,49 @@ th{
 		margin-right: 5px;
 	}
 	#smart-button-container{
-	position: fixed;
-	bottom: 0px;
-	
-	/*width: 100vw;*/
-	padding: 20px;
-	justify-content: center;
-	align-items: center;
-	background-color: #222;
-	font-family: IBM Plex Mono;
-	box-shadow: 0px 0px 5px 5px grey;
-	animation:  move-up-1 0.5s linear;
-}
-#smart-button-container input{
-	padding: 0px;
-	width: 80vw;
-	border-radius: 5px;
-	border-style: none;
-	background-color: #222;
-	color: white;
-}
-.centerded{
-	display: inline;
-	/*width: 100vw;*/
-	align-items: center;
-	justify-content: center;
-}
-.user-legend-2{
-		display: flex;
-        font-family: IBM Plex Sans;
-        font-weight: 600;
-        font-size: 15px;
-        color: #2F6CE5;
-        border-radius: 10px;
-
-}
-@keyframes move-up-1{
-	from{
-		bottom: -50vh;
-	}	
-	to{
+		position: fixed;
 		bottom: 0px;
+		
+		/*width: 100vw;*/
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+		background-color: #222;
+		font-family: IBM Plex Mono;
+		box-shadow: 0px 0px 5px 5px grey;
+		animation:  move-up-1 0.5s linear;
 	}
-}
+	#smart-button-container input{
+		padding: 0px;
+		width: 80vw;
+		border-radius: 5px;
+		border-style: none;
+		background-color: #222;
+		color: white;
+	}
+	.centerded{
+		display: inline;
+		/*width: 100vw;*/
+		align-items: center;
+		justify-content: center;
+	}
+	.user-legend-2{
+			display: flex;
+	        font-family: IBM Plex Sans;
+	        font-weight: 600;
+	        font-size: 15px;
+	        color: #2F6CE5;
+	        border-radius: 10px;
+
+	}
+	@keyframes move-up-1{
+		from{
+			bottom: -50vh;
+		}	
+		to{
+			bottom: 0px;
+		}
+	}
 }
 @media(orientation: landscape){
 	.mark-down{
@@ -802,7 +813,6 @@ th{
 }
 .navtop{
 	width: 100vw;
-	background-color: #2F6CE5;
 	position: fixed;
 	height: 100px;
 	box-shadow: 0px 0px 20px 1px rgba(2, 2, 0, 0.4);
@@ -811,6 +821,7 @@ th{
 	display: flex;
 	justify-items: center;
 	align-items: center;
+	background: linear-gradient(to right,#2F6CE5,#0f0670) ;
 }
 .account:hover{
 	border-bottom: 2px solid white;
