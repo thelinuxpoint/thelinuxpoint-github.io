@@ -236,7 +236,7 @@ function NavBar(props) {
 
     return(
             <>
-             <canvas id="canvas" ></canvas>
+            {/*<canvas id="canvas" ></canvas>*/}
             <div draggable={false} className="navbar" >
                 <div className="search-btn" onLoad={Animate}>
                     <div className="search-btn-inner">
@@ -251,7 +251,7 @@ function NavBar(props) {
                         }><img alt="..." style={{height:"20px",width:"20px"}} src="https://thelinuxpoint.github.io/threedots.svg" /></button> 
                     </div>
                 </div>
-
+                <img alt="..." src="lvm.svg" style={{width:"100vw"}}/>
                 {MySvg}
                 
                 {/* <div className="search-bar-outer" align="center">

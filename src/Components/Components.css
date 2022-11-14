@@ -189,7 +189,7 @@
 .show-up-inner-0{
 	display: inline-block;
 	background: linear-gradient(rgba(10,60,190,0.8),rgba(16,20,90, 0.5));
-	background: url(https://thelinuxpoint.github.io/Hexagon.svg);
+	background: url(https://thelinuxpoint.github.io/buble.svg);
 	height: 250px;
 	width: 250px;
 	border-radius: 10px;
@@ -814,14 +814,14 @@ th{
 .navtop{
 	width: 100vw;
 	position: fixed;
-	height: 100px;
+	height: 80px;
 	box-shadow: 0px 0px 20px 1px rgba(2, 2, 0, 0.4);
 	left: 0;
 	top: 0;
 	display: flex;
 	justify-items: center;
 	align-items: center;
-	background: linear-gradient(to right,#2F6CE5,#0f0670) ;
+	background: linear-gradient(to right,#09062b,#0f06f0) ;
 }
 .account:hover{
 	border-bottom: 2px solid white;
