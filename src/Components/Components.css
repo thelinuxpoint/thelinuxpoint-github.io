@@ -188,18 +188,22 @@
 }
 .show-up-inner-0{
 	display: inline-block;
-	background: linear-gradient(rgba(10,60,190,0.8),rgba(16,20,90, 0.5));
 	background: url(https://thelinuxpoint.github.io/buble.svg);
-	height: 250px;
-	width: 250px;
+	background: linear-gradient(rgba(10,60,140,0.8),rgba(16,20,90, 0.5));
 	border-radius: 10px;
 	/*border: 5px solid ghostwhite;*/
 	padding: 20px;
-	/*box-shadow: 2px 2px 15px 2px grey;*/
+	box-shadow: 5px 2px 20px 1px black;
 	transition: transform 1s;  	
 	user-select: none;
 	background-position: center;
 	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: Nunito;
+	font-weight: 800;
+
 }
 
 @keyframes lolpol{
@@ -288,11 +292,11 @@
 }
 .show-up-inner-0:hover{
 	/*transform: rotateY(-90deg) translate3d(0, 0, 50px);*/
-	box-shadow: 0px 2px 15px 2px lightcyan;
+	box-shadow: 0px 2px 15px 2px cyan;
 }
 .block-deck{
-	background: #0e1439;
-	margin-top:60px;
+/*	background: #0e1439;
+*/	margin-top:60px;
 }
 .show-up-out{	
 	width: 100vw;

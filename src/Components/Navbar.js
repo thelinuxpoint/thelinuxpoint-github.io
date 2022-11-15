@@ -263,10 +263,10 @@ function NavBar(props) {
                    
                 <div className="navtop">
                     <div className="account">
-                        <div className="account-inner" onClick={props.handler}>
+{/*                        <div className="account-inner" onClick={props.handler}>
                             <NavLink to="/login" className="descr"><p tooltip="Sign UP/Sign IN" >Log in</p></NavLink>
                         </div>
-                    </div>
+*/}                    </div>
                 </div>
                 
 

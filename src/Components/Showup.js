@@ -371,7 +371,7 @@ function Showup(argument) {
 		<div className="block-deck">
 		<div id="embed" className="show-up-outer">
 			<div className="show-up-out">
-				<Head name="Embedded Tools"/>
+				<Head name="Embedded Systems"/>
 			</div>
 		</div>
 		<div className='show-up-desc'>
@@ -404,19 +404,37 @@ function Showup(argument) {
 
 			}>
 			<div style={{width:"20px"}}></div>
-				<div className="show-up-inner-0">
-					<div>
-						<img alt="..." src="rasp.png" style={{width:"180px",height:"200px"}}/>
+			<div className="show-up-inner-0">
+				x86 Architecture
+				<div>
+						<img alt="..." src="rasp.png" style={{width:"200px",height:"200px"}}/>
 					</div>
 					<button>  Go ❱❱ </button>
 				</div>
 				<div className="show-up-inner-0">
+					RISC Architecture
+					<div>
+						<img alt="..." src="risc.png" style={{width:"200px",height:"200px"}}/>
+					</div>
+					<button>  Go ❱❱ </button>
+				</div>
+				<div className="show-up-inner-0">
+					Raspberry Pi
+
+					<div>
+						<img alt="..." src="rasp.png" style={{width:"200px",height:"200px"}}/>
+					</div>
+					<button>  Go ❱❱ </button>
+				</div>
+				<div className="show-up-inner-0">
+				Arduino
 					<div>
 						<img alt="..." src="ard-uno.png" style={{width:"200px",height:"200px"}}/>
 					</div>
 					<button>  Go ❱❱ </button>
 				</div>
 				<div className="show-up-inner-0">
+				STM32
 					<div>
 						<img alt="..." src="stm32.png" style={{width:"200px",height:"200px"}}/>
 					</div>
