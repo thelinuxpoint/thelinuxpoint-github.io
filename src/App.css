@@ -916,7 +916,7 @@ canvas{
     }
     @keyframes stroke {
         0% {
-                        stroke-width: 3;
+            stroke-width: 3;
 
             fill: rgba(72, 138, 20, 0);
             stroke: #365fa0;
@@ -926,10 +926,10 @@ canvas{
             stroke-width: 2;
         }
         70% {
-                        stroke-width: 3;
+            stroke-width: 3;
 
             fill: rgba(72, 138, 20, 0);
-                        stroke: #365fa0;
+            stroke: #365fa0;
 
             /*stroke: cyan;*/
         }
@@ -1060,8 +1060,7 @@ canvas{
         visibility: hidden;
         display: none;
     }
-    svg{
-        visibility: hidden;
-    }
+    
+    
 }
 

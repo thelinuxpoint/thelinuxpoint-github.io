@@ -198,7 +198,6 @@
 	/*box-shadow: 2px 2px 15px 2px grey;*/
 	transition: transform 1s;  	
 	user-select: none;
-	animation: lolpol 1s infinite alternate;
 	background-position: center;
 	background-size: cover;
 }
@@ -292,7 +291,8 @@
 	box-shadow: 0px 2px 15px 2px lightcyan;
 }
 .block-deck{
-		margin-top:60px;
+	background: #0e0439;
+	margin-top:60px;
 }
 .show-up-out{	
 	width: 100vw;
@@ -326,7 +326,9 @@
 	width: 50px;
 
 }
-#scroll-pr-f{background-color: white;
+#scroll-pr-f{
+	margin-top: 100px;
+	background-color: white;
 	border-radius: 50%;
 	visibility: hidden;
 	display: flex;
@@ -340,9 +342,11 @@
 	width: 50px;
 
 }
-#scroll-pr-b{background-color: white;
+#scroll-pr-b{
+	background-color: white;
 	border-radius: 50%;
 	visibility: hidden;
+	margin-top: 100px;
 	right: 10px;
 	display: flex;
 	justify-content: center;
@@ -354,7 +358,8 @@
 	width: 50px;
 
 }
-#scroll-we-f{background-color: white;
+#scroll-we-f{
+	background-color: white;
 	border-radius: 50%;
 	visibility: hidden;
 	left: 10px;
@@ -372,7 +377,8 @@
 	background-color: white;
 	border-radius: 50%;
 	visibility: hidden;
-	right: 10px;
+	right: 10px;	margin-top: 100px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -383,9 +389,11 @@
 	width: 50px;
 
 }
-#scroll-it-f{background-color: white;
+#scroll-it-f{
+	background-color: white;
 	border-radius: 50%;
-	visibility: hidden;
+	visibility: hidden;	margin-top: 100px;
+
 	left: 10px;
 	display: flex;
 	justify-content: center;
@@ -400,7 +408,8 @@
 #scroll-it-b{
 	background-color: white;
 	border-radius: 50%;
-	visibility: hidden;
+	visibility: hidden;	margin-top: 100px;
+
 	right: 10px;
 	display: flex;
 	justify-content: center;
@@ -414,7 +423,8 @@
 }
 #scroll-ml-f{background-color: white;
 	border-radius: 50%;
-	visibility: hidden;
+	visibility: hidden;	margin-top: 100px;
+
 	left: 10px;
 	display: flex;
 	justify-content: center;
@@ -429,7 +439,8 @@
 #scroll-ml-b{
 	background-color: white;
 	border-radius: 50%;
-	visibility: hidden;
+	visibility: hidden;	margin-top: 100px;
+
 	right: 10px;
 	display: flex;
 	justify-content: center;
@@ -821,7 +832,7 @@ th{
 	display: flex;
 	justify-items: center;
 	align-items: center;
-	background: linear-gradient(to right,#09062b,#0f06f0) ;
+	background: linear-gradient(to right,#09062b,#090658) ;
 }
 .account:hover{
 	border-bottom: 2px solid white;
