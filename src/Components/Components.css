@@ -332,7 +332,7 @@
 }
 #scroll-pr-f{
 	margin-top: 100px;
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;
 	display: flex;
@@ -347,7 +347,7 @@
 
 }
 #scroll-pr-b{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;
 	margin-top: 100px;
@@ -363,9 +363,9 @@
 
 }
 #scroll-we-f{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
-	visibility: hidden;
+	visibility: hidden;margin-top: 100px;
 	left: 10px;
 	display: flex;
 	justify-content: center;
@@ -378,7 +378,7 @@
 
 }
 #scroll-we-b{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;
 	right: 10px;	margin-top: 100px;
@@ -394,7 +394,7 @@
 
 }
 #scroll-it-f{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;	margin-top: 100px;
 
@@ -410,7 +410,7 @@
 
 }
 #scroll-it-b{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;	margin-top: 100px;
 
@@ -441,7 +441,7 @@
 
 }
 #scroll-ml-b{
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
 	visibility: hidden;	margin-top: 100px;
 
