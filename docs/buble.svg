@@ -9,7 +9,7 @@
 		<stop  offset="0" style="stop-color:#0C1329"/>
 		<stop  offset="0.4286" style="stop-color:#001227"/>
 	</linearGradient>
-	<rect x="-16.386" y="-16.394" fill="transparent" stroke="#000000" stroke-miterlimit="10" width="931.453" height="634.468"/>
+	<rect x="-16.386" y="-16.394" fill="transparent"  stroke-miterlimit="10" width="931.453" height="634.468"/>
 </g>
 <g id="Bubbles">
 	<circle opacity="0.2" fill="#754C29" cx="61.61" cy="540.078" r="17.999">

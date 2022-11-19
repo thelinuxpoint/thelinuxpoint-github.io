@@ -577,8 +577,9 @@ th{
 @media(orientation: landscape){
 
 	.skills-inner{
-
+		
 		padding-top: 80px;
+
 	}.skills-inner img{
 		
 		background-image: inherit;

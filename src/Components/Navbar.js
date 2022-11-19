@@ -251,7 +251,7 @@ function NavBar(props) {
                         }><img alt="..." style={{height:"20px",width:"20px"}} src="https://thelinuxpoint.github.io/threedots.svg" /></button> 
                     </div>
                 </div>
-                <img alt="..." src="lvm.svg" style={{width:"100vw"}}/>
+                <img alt="..." src="buble.svg" style={{width:"100vw",marginLeft:"200px"}}/>
                 {MySvg}
                 
                 {/* <div className="search-bar-outer" align="center">

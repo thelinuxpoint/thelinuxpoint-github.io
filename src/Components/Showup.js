@@ -20,12 +20,12 @@ function Showup(argument) {
 			<p className="" >A programming language is a computer language that is used by programmers (developers) to communicate with computers. It is a set of instructions written in any specific language to perform a specific task. Our Programming section contains various general purpose languages.</p>
 		</div>
 		<br/>
-		{/* <div className="skills-inner" align="center">
+{/*		<div className="skills-inner" align="center">
 			<div>
 				<img src="prog.svg"/ >
 			</div>
-		</div> */}
-
+		</div>
+*/}
 		<div className="show-up" id="programming" onMouseMove={function(x){
 			if ((window.innerWidth-x.nativeEvent.x)<=80){
 				document.getElementById('scroll-pr-b').style.visibility="visible";
@@ -114,7 +114,7 @@ function Showup(argument) {
 		</div>
 		<br/>
 
-		{/* <div className="skills-inner" align="center">
+{/*		 <div className="skills-inner" align="center">
 			<div>
 				<img src="web_ill.svg"/ >
 			</div>
