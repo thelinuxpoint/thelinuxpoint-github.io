@@ -7,8 +7,7 @@ function Showup(argument) {
 	return(
 		<>
 
-		<p className="show-up-desc-0">This is the website Created by Prakash Choudhary for learning Technical Stuffs. This Website is Under Construction</p>
-
+		<h2>Learn to CODE for FREE!</h2>
 	{/*##########################################################*/}
 		<div className="block-deck">
 		<div id="programming" className="show-up-outer">

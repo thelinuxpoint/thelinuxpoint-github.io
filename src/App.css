@@ -9,7 +9,6 @@ body {
     font-family: Nunito;
     background: url(https://thelinuxpoint.github.io/rect.svg) #0e0433; 
     background-size: cover;
-
     /*word-spacing: 2px;*/
     color: white;
     background-attachment: fixed;
@@ -690,6 +689,12 @@ body {
     width: calc(100vw - 20px);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    background: url(https://thelinuxpoint.github.io/buble.svg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+
+
     /*filter: drop-shadow(0 0 0.2rem greenyellow);*/
 }
 @media ( orientation: landscape) {
@@ -914,6 +919,11 @@ canvas{
         stroke: #365fa0;
         font-size: 100px;
     }
+    .ttx{
+        font-size: 50px;
+        animation: none;
+        color: aquamarine;
+    }
     @keyframes stroke {
         0% {
             stroke-width: 3;
@@ -1061,6 +1071,8 @@ canvas{
         display: none;
     }
     
-    
+    .navbar{
+        height: 0;
+    }
 }
 
