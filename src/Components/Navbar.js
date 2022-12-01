@@ -229,9 +229,9 @@ function NavBar(props) {
                         The Linux Point
                     </text>
                 </svg>  
-    var MySvg2 = <svg viewBox="0 0 1320 300">
-                    <text className="ttx" x="50%" font-size="15px" y="100%" dy=".10em" text-anchor="right">
-                        the way to code
+    var MySvg2 = <svg fill="aquamarine" viewBox="0 0 1320 300">
+                    <text className="ttx" x="50%" font-size="15px" y="125%" dy=".10em" text-anchor="right">
+                        - the way to code
                     </text>
                 </svg>  
 
