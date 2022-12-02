@@ -302,13 +302,10 @@
 	margin-top:60px;
 }
 .block-deck:nth-child(2n+1){
-	background: url(https://thelinuxpoint.github.io/shd.svg);
+	background: url(https://thelinuxpoint.github.io/cp2.svg);
 	margin-top:60px;
 }
-.block-deck:nth-child(1){
-	background: url(https://thelinuxpoint.github.io/shd.svg);
-	margin-top:60px;
-}
+
 .show-up-out{	
 	width: 100vw;
 	display: flex;
