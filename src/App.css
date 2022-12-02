@@ -915,21 +915,20 @@ canvas{
     svg text {
         /*text-transform: uppercase;*/
         animation: stroke 5s infinite alternate;
-        stroke-width: 2;
-        stroke: #365fa0;
+        stroke-width: 1;
         font-size: 100px;
     }
     .ttx{
         font-size: 50px;
         animation: none;
-        color: aquamarine;
+        color: aliceblue;
     }
     @keyframes stroke {
         0% {
             stroke-width: 3;
-
-            fill: rgba(72, 138, 20, 0);
-            stroke: #365fa0;
+            fill: transparent;
+/*            fill: rgba(72, 138, 20, 0);*/
+            stroke: #36afa0;
             /*stroke: lime;*/
             stroke-dashoffset: 25%;
             stroke-dasharray: 0 50%;
@@ -937,25 +936,31 @@ canvas{
         }
         70% {
             stroke-width: 3;
+            fill: transparent;
 
-            fill: rgba(72, 138, 20, 0);
-            stroke: #365fa0;
+/*            fill: rgba(72, 138, 20, 0);*/
+            stroke: #a65fa0;
 
             /*stroke: cyan;*/
         }
         90% {
-            fill: rgba(72, 138, 20, 0);
+                        fill: transparent;
+
+/*            fill: rgba(72, 138, 20, 0);*/
             /*stroke: crimson;*/
             stroke-width: 3;
-                        stroke: #365fa0;
+                        stroke: #36dff0;
 
         }
         100% {
+                        fill: transparent;
+
             fill: greenyellow;
+
             stroke: rgba(54, 95, 160, 0);
             stroke-dashoffset: -25%;
             stroke-dasharray: 50% 0;
-            stroke-width: 0;
+            stroke-width: 3;
         }
     }
 }
