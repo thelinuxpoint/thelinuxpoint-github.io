@@ -7,16 +7,17 @@ function Showup(argument) {
 	return(
 		<>
 
-		<h2>Learn to CODE for FREE!</h2>
+		<h1>Learn to CODE for FREE!</h1>
+		<img src="https://thelinuxpoint.github.io/thelinuxpoint.png" style={{width:"200px",height:"200px"}}/>
 	{/*##########################################################*/}
 		<div className="block-deck">
 		<div id="programming" className="show-up-outer">
 			<div className="show-up-out">
-				<Head name="Programming Language"/>
+				<Head name="Choose a Programming Language"/>
 			</div>
 		</div>
 		<div className='show-up-desc'>
-			<p className="" >A programming language is a computer language that is used by programmers (developers) to communicate with computers. It is a set of instructions written in any specific language to perform a specific task. Our Programming section contains various general purpose languages.</p>
+			<p className="" >Pickup a programming language to learn</p>
 		</div>
 		<br/>
 {/*		<div className="skills-inner" align="center">
@@ -105,7 +106,7 @@ function Showup(argument) {
 		<div className="block-deck">
 		<div id="web" className="show-up-outer">
 			<div className="show-up-out">
-				<Head name="Web Development"/>
+				<Head name="Lean Web Dev"/>
 			</div>
 		</div>
 		<div className='show-up-desc'>
@@ -404,22 +405,21 @@ function Showup(argument) {
 			}>
 			<div style={{width:"20px"}}></div>
 			<div className="show-up-inner-0">
-				x86 Architecture
+				x86 Assembly
 				<div>
-						<img alt="..." src="rasp.png" style={{width:"200px",height:"200px"}}/>
+						<img alt="..." src="x86.png" style={{width:"200px",height:"200px"}}/>
 					</div>
-					<button>  Go ❱❱ </button>
+					<NavLink className="descr" to="/x86"><button>  Go ❱❱ </button></NavLink>
 				</div>
 				<div className="show-up-inner-0">
-					RISC Architecture
+					RISC Assembly
 					<div>
-						<img alt="..." src="risc.png" style={{width:"200px",height:"200px"}}/>
+						<img alt="..." src="arm.png" style={{width:"200px",height:"200px"}}/>
 					</div>
-					<button>  Go ❱❱ </button>
+					<NavLink className="descr" to="/arm"><button>  Go ❱❱ </button></NavLink>
 				</div>
 				<div className="show-up-inner-0">
 					Raspberry Pi
-
 					<div>
 						<img alt="..." src="rasp.png" style={{width:"200px",height:"200px"}}/>
 					</div>
@@ -439,23 +439,18 @@ function Showup(argument) {
 					</div>
 					<button>  Go ❱❱ </button>
 				</div>
-				
-		</div>
-			</div>		
-		<div className="block-deck">
-		<div id="programming" className="show-up-outer">
-			<div className="show-up-out">
-				<Head name="CryptoCurrency"/>
 			</div>
-		</div>
-		<div className='show-up-desc'>
-			<p className=""></p>
-		</div>
-		{/* <div className="skills-inner" align="center">
-			<div>
-				<img src="cryptocur.svg"/ >
+		</div>		
+
+		{/*<div className="block-deck">
+			<div id="programming" className="show-up-outer">
+				<div className="show-up-out">
+					<Head name="CryptoCurrency"/>
+				</div>
 			</div>
-		</div> */}
+			<div className='show-up-desc'>
+				<p className=""></p>
+			</div>
 
 		<div className="show-up" onMouseMove={function(x){
 			var c = document.getElementsByClassName('show-up')[5];
@@ -492,7 +487,10 @@ function Showup(argument) {
 					<NavLink className="descr" to="/web3/blockchain"><button>  Go ❱❱ </button></NavLink>
 				</div>
 			</div>
-		</div>
+		</div>*/}
+
+		<h1>Subscribe To Our Newsletter!</h1>
+
 			<Author/>
 			</>
 	);

@@ -298,9 +298,10 @@
 	box-shadow: 0px 2px 15px 2px cyan;
 }
 .block-deck{
-/*	background: #0e1439;
-*/	margin-top:60px;
+	background: url(https://thelinuxpoint.github.io/cp.svg);
+	margin-top:60px;
 }
+
 .show-up-out{	
 	width: 100vw;
 	display: flex;

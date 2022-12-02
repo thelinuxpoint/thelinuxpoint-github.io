@@ -934,29 +934,23 @@ canvas{
             stroke-dasharray: 0 50%;
             stroke-width: 2;
         }
-        70% {
+        30% {
             stroke-width: 3;
             fill: transparent;
 
 /*            fill: rgba(72, 138, 20, 0);*/
-            stroke: #a65fa0;
+            stroke: #56afa0;
 
             /*stroke: cyan;*/
         }
-        90% {
-                        fill: transparent;
-
-/*            fill: rgba(72, 138, 20, 0);*/
-            /*stroke: crimson;*/
+        60% {
+            fill: transparent;
             stroke-width: 3;
-                        stroke: #36dff0;
+            stroke: #36dff0;
 
         }
         100% {
-                        fill: transparent;
-
-            fill: greenyellow;
-
+            fill:aquamarine;
             stroke: rgba(54, 95, 160, 0);
             stroke-dashoffset: -25%;
             stroke-dasharray: 50% 0;
@@ -965,15 +959,14 @@ canvas{
     }
 }
 .me {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    background: url(https://thelinuxpoint.github.io/uu.jpg);
+    height: 200px;
+    width: 200px;
+    background: url(https://thelinuxpoint.github.io/thelinuxpoint.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    border-style: groove;
+/*    border-style: groove;*/
 }
 
 
