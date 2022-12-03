@@ -241,35 +241,13 @@ function NavBar(props) {
     return(
             <>
             {/*<canvas id="canvas" ></canvas>*/}
-            <div draggable={false} className="navbar" >
-                {/*<div className="search-btn" onLoad={Animate}>
-                    <div className="search-btn-inner">
-                        <button className="dashboard" onClick={
-                            function(arg){
-                                if (document.getElementsByClassName('flap-box')[0].style.right=="30vw") {
-                                    document.getElementsByClassName('flap-box')[0].style.right="100vw";
-                                }else{
-                                    document.getElementsByClassName('flap-box')[0].style.right="30vw";
-                                }
-                            }
-                        }><img alt="..." style={{height:"20px",width:"20px"}} src="https://thelinuxpoint.github.io/threedots.svg" /></button> 
-                    </div>
-                </div>*/}
-                
+            <div draggable={false} className="navbar" >  
                 {MySvg}
                 {MySvg2}
-                {/* <div className="search-bar-outer" align="center">
-                    <div className="search-bar">
-                        <button><img alt="..." src="Vector.png"/></button>
-                        <input placeholder="Search in The Linux Point"/>
-                    </div>
-                </div> */}               
-
-
             </div>
             <div className="navtop">
                     <div className="account">
-{/*                        <div className="account-inner" onClick={props.handler}>
+{/*                     <div className="account-inner" onClick={props.handler}>
                             <NavLink to="/login" className="descr"><p tooltip="Sign UP/Sign IN" >Log in</p></NavLink>
                         </div>
 */}                    </div>

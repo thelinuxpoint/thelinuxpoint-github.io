@@ -541,13 +541,16 @@
 }
 .head-down-desc::before{
 	content: "# ";
-	color: red;	
-	font-weight: 990;font-size: 30px;
+	color: red;
+	font-family: serif;	
+	font-weight: 990;
+	font-size: 30px;
 }	
 .head-down-desc{
-	font-weight: 990;font-size: 25px;
+	font-weight: 990;
+	font-size: 25px;
 	user-select: none;
-	font-family: Open Sans;
+	font-family: monospace;
 }
 
 table{

@@ -13,19 +13,14 @@ function Showup(argument) {
 		<div className="block-deck">
 		<div id="programming" className="show-up-outer">
 			<div className="show-up-out">
-				<Head name="Choose a Programming Language"/>
+				<Head name="Pick a Programming Language"/>
 			</div>
 		</div>
 		<div className='show-up-desc'>
 			<p className="" >Pickup a programming language to learn</p>
 		</div>
 		<br/>
-{/*		<div className="skills-inner" align="center">
-			<div>
-				<img src="prog.svg"/ >
-			</div>
-		</div>
-*/}
+
 		<div className="show-up" id="programming" onMouseMove={function(x){
 			if ((window.innerWidth-x.nativeEvent.x)<=80){
 				document.getElementById('scroll-pr-b').style.visibility="visible";
@@ -114,11 +109,6 @@ function Showup(argument) {
 		</div>
 		<br/>
 
-{/*		 <div className="skills-inner" align="center">
-			<div>
-				<img src="web_ill.svg"/ >
-			</div>
-		</div> */}
 		<div className="show-up" onMouseMove={function(x){
 			if ((window.innerWidth-x.nativeEvent.x)<=80){
 				document.getElementById('scroll-we-b').style.visibility="visible";
@@ -194,13 +184,8 @@ function Showup(argument) {
 		<div className='show-up-desc'>
 			<p className="">Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data.</p>
 		</div>
-				<br/>
+		<br/>
 
-		{/* <div className="skills-inner" align="center">
-			<div>
-				<img src="IT.svg"/ >
-			</div>
-		</div> */}
 		<div className="show-up" onMouseMove={function(x){
 			if ((window.innerWidth-x.nativeEvent.x)<=80){
 				document.getElementById('scroll-it-b').style.visibility="visible";
@@ -288,12 +273,6 @@ function Showup(argument) {
 		<div className='show-up-desc'>
 			<p className=""></p>
 		</div>
-
-		{/* <div className="skills-inner" align="center">
-			<div>
-				<img src="ml.svg" />
-			</div>
-		</div> */}
 
 		<div className="show-up" onMouseMove={
 			function(x){
@@ -522,9 +501,8 @@ function Author(){
             </div>
             </div>
             <br/>
-            <br/>
                 {/*<Donate/>*/}
-            <br/>
+
            </div>
 
         </div>

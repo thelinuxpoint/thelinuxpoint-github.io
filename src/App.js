@@ -24,6 +24,10 @@ import HomeCpp from "./Content/Cpp/HomeCpp";
 import IntroCpp from "./Content/Cpp/IntroCpp";
 import CppKeywords from "./Content/Cpp/CppKeywords";
 
+//x86
+import Homex86 from "./Content/x86/Homex86";
+import X86Intro from "./Content/x86/x86Intro";
+
 //php folder
 import HomePHP from "./Content/PHP/phphome";
 import IntroPHP from "./Content/PHP/phpintro";
@@ -348,6 +352,7 @@ class App extends React.Component{
                         <HomeCpp/>
                     </Route>
 
+
                     {/*************** Start the Ruby Programming Guide ***************/}
                     <Route path="/ruby"> 
                         <Route exact path="/ruby">
@@ -498,7 +503,18 @@ class App extends React.Component{
                         </Switch>
                         <HomeJava/>
                     </Route>
-
+                
+                    <Route path="/x86">
+                        <Route exact path="/x86">
+                            <Redirect to="/x86/intro" />
+                        </Route>
+                        <Switch>
+                            <Route path="/x86/intro">
+                                <X86Intro/>
+                            </Route>
+                        </Switch>
+                        <Homex86/>
+                    </Route>
                     {/************* Linux *************/}
                     <Route path="/linuxcommand"> 
                         <Route exact path="/linuxcommand">
