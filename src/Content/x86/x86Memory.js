@@ -22,16 +22,25 @@ function Navigator(props){
 	);
 }
 //
-export default function X86Intro(){
+export default function X86Memory(){
 	window.scrollTo(0,0)
 	return(
 		<>
 			<Helmet>
-        		<title>x86 Introduction & Fundamentals</title>
+        		<title>x86 Memory management</title>
         		<meta name="description" content="Learn basics about Assembly Programming" />
 	      	</Helmet>
-			<Head name="A Brief Introduction"/>
-			<Mark desc="The x86 processor type first appeared in the Intel 80386 processor, and continued with processors such as the Intel Pentium, Intel Pentium 4, Intel Pentium Core Duo, and the Advanced Micro Devices (AMD) Athlon. tlp:br so therefore we would be focusing on intels 80386 processor so we can have a idea of modern cpu's"/>
+			<Head name="Memory Addressing"/>
+			<Mark desc="tlp:org ⌾ Logical Addresses tlp:br tlp:br A logical address is a reference into a segmented-address space. It is comprised
+			of the segment selector and the effective address. Notationally, a logical address is represented as tlp:br tlp:br
+			Logical Address tlp:red = Segment Selector : Offset tlp:br tlp:br 
+			Logical addresses are often referred to as far pointers. Far pointers are used in software addressing
+			when the segment reference must be explicit (i.e., a reference to a segment outside the current
+			segment)."/>
+			
+			<Head name="Operating Modes"/>
+			<div align="center"><img style={{borderRadius:"10px", width:"400px",height:"200px"}} src="https://thelinuxpoint.github.io/x86modes.png" className="put-in-side-code"/></div>
+
 			<br/>
 			<Navigator left="/cpp/intro/" right="/cpp/keywords"/>
 		</>

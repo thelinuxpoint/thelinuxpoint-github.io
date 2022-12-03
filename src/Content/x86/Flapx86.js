@@ -43,6 +43,26 @@ function Flapx86(props){
 				<img src="https://thelinuxpoint.github.io/x86.png" style={{width:"150px",height:"150px"}}/>
 			</div>
 			<hr/>
+			<div className="topic">
+				<NavLink to="/x86/concept" onClick={slideIN}  className="descr"><p>Introduction</p></NavLink>
+			</div>
+			<hr/>
+			<div className="topic">
+				<NavLink to="/x86/cpu_architecture" onClick={slideIN}  className="descr"><p>CPU architecture</p></NavLink>
+			</div>
+			<hr/>
+			<div className="topic">
+				<NavLink to="/x86/memory_architecture" onClick={slideIN}  className="descr"><p>Memory management</p></NavLink>
+			</div>
+			<hr/>
+			<div className="topic">
+				<NavLink to="/x86/segmentation" onClick={slideIN}  className="descr"><p>Segmentation</p></NavLink>
+			</div>
+			<hr/>
+			<div className="topic">
+				<NavLink to="/x86/pagging" onClick={slideIN}  className="descr"><p>Pagging</p></NavLink>
+			</div>
+			<hr/>
 			<Author/>
 		</div>
 		</>

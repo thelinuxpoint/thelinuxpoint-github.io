@@ -27,6 +27,7 @@ import CppKeywords from "./Content/Cpp/CppKeywords";
 //x86
 import Homex86 from "./Content/x86/Homex86";
 import X86Intro from "./Content/x86/x86Intro";
+import X86Memory from "./Content/x86/x86Memory";
 
 //php folder
 import HomePHP from "./Content/PHP/phphome";
@@ -506,11 +507,14 @@ class App extends React.Component{
                 
                     <Route path="/x86">
                         <Route exact path="/x86">
-                            <Redirect to="/x86/intro" />
+                            <Redirect to="/x86/concept" />
                         </Route>
                         <Switch>
-                            <Route path="/x86/intro">
+                            <Route path="/x86/concept">
                                 <X86Intro/>
+                            </Route>
+                             <Route path="/x86/memory_architecture">
+                                <X86Memory/>
                             </Route>
                         </Switch>
                         <Homex86/>
