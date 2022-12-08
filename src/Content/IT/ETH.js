@@ -131,13 +131,37 @@ function HomeEth(props){
 // 
 function EthIntro(props){
 	return (
-		<><br/>
+		<>
+		<br/>
 		<Helmet>
         		<title>Ethical Hacking</title>
         		<meta name="description" content="Learn what is Ethical Hacking" />
 	    </Helmet>
-		<Head name="Ethical Haking"/>
-		
+		<Head name="A Little Description"/>
+		<Mark desc="The information provided in the ethical hacking series is taken from various books to give
+		 an optimal knowledge of everthing related to hacking. a user is responsible for misusing the information
+		 provided on the website cause we known that knowledge is not good or bad it depends on how a user utilizes it and 
+		 always leads in good way or bad way.
+		"/>
+		<Mark desc="In this complete series of Ethical Hacking we would be leaning various network attacks, web attacks and mobile apps attacks 
+		which would require a excellent knowledge of computer systems and programming skills, mainly BASH programming which 
+		you can learn here on the website itself.
+		"/>
+		<Head name="What is Hacking?"/>
+		<Mark desc="Hacking in the field of computer security refers to exploiting system vulnerabilities and
+		compromising security controls to gain unauthorized or inappropriate access to system
+		resources. tlp:br Hacking can be done to steal, pilfer, or redistribute intellectual
+		property, thus leading to business loss. tlp:br tlp:br Hacking on computer networks is generally done using scripts or other network programming.
+		Network hacking techniques include creating viruses and worms, performing denial-of-service
+		(DoS) attacks, establishing unauthorized remote access connections to a device using Trojans or
+		backdoors, creating botnets, packet sniffing, phishing, and password cracking.
+		"/>
+		<Head name="Requirements"/>
+
+		<br/>
+
+
+		<Navigator left="" right=""/>
 		</>
 	);
 }

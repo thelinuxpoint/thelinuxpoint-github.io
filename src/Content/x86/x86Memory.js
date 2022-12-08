@@ -42,7 +42,11 @@ export default function X86Memory(){
 			<Mark desc="tlp:org ⌾ Physical Addresses tlp:br tlp:br A physical address is a reference into the physical-address space, typically
 			main memory. Physical addresses are translated from virtual addresses using page-translation
 			mechanisms."/>
-
+			<Head name="Memory Organization"/>
+			<Mark desc="tlp:org ⌾ Virtual Addresses tlp:br tlp:br Software uses virtual addresses to access locations within the virtual-memory
+			space. System software is responsible for managing the relocation of applications and data in virtual-
+			memory space using segment-memory management."/>
+			
 			<Head name="Operating Modes"/>
 			<div align="center"><img style={{borderRadius:"0px",filter:"invert()"}} src="https://thelinuxpoint.github.io/x86modes.png" className="put-in-side-code"/></div>
 
