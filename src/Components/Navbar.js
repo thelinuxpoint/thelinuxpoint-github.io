@@ -241,26 +241,25 @@ function NavBar(props) {
     return(
             <>
             {/*<canvas id="canvas" ></canvas>*/}
-            <div draggable={false} className="navbar" >  
-                {MySvg}
-                {MySvg2}
-            </div>
-            <div className="navtop">
+                <div className="navtop">
                     <div className="account">
-{/*                     <div className="account-inner" onClick={props.handler}>
+                         <div className="account-inner" onClick={props.handler}>
                             <NavLink to="/login" className="descr"><p tooltip="Sign UP/Sign IN" >Log in</p></NavLink>
                         </div>
-*/}                    </div>
+                    </div>
                 </div>
+                <div className="gradient-container">
+                <div draggable={false} className="gradient"></div>
+                 <div draggable={false} className="gradient2"></div>
+                <div draggable={false} className="gradient3"></div>
+               </div>
             </>
         );
 }
 
 // function Login(props) {
-
 //     var is_m = window.innerWidth<window.innerHeight;
 // 	if (is_m) {var clas="login-m"} else { var clas="login"}
-    
 //     return(
 //         <div className={clas} hidden={true}>
 //             <img alt="..." className="close-btn" src="https://thelinuxpoint.github.io/close.png" onClick={function(){

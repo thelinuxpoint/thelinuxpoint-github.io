@@ -7,8 +7,7 @@ function Showup(argument) {
 	return(
 		<>
 
-		<h1>Learn to CODE for FREE!</h1>
-		<img src="https://thelinuxpoint.github.io/thelinuxpoint.png" style={{width:"200px",height:"200px"}}/>
+		<div align="center"><h1>Learn to CODE for FREE at <span style={{fontFamily:"SG"}}>The Linux Point</span>!</h1></div>
 	{/*##########################################################*/}
 		<div className="block-deck">
 		<div id="programming" className="show-up-outer">
