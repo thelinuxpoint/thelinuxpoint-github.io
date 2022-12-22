@@ -241,13 +241,11 @@ function NavBar(props) {
     return(
             <>
             {/*<canvas id="canvas" ></canvas>*/}
-                {/*<div className="navtop">
+                <div className="navtop">
                     <div className="account">
-                         <div className="account-inner" onClick={props.handler}>
-                            <NavLink to="/login" className="descr"><p tooltip="Sign UP/Sign IN" >Log in</p></NavLink>
-                        </div>
+                        
                     </div>
-                </div>*/}
+                </div>
                 <div className="gradient-container">
                 <div draggable={false} className="gradient"></div>
                  <div draggable={false} className="gradient2"></div>
