@@ -274,6 +274,7 @@ class App extends React.Component{
     var Showup = React.lazy(() => import('./Components/Showup')); //
 
 	let	func = this.state.authUser ? userloged : nouser;
+
     var Element = 
                 <>
                     <NavBar handler={func.bind(this)}/>
@@ -301,7 +302,7 @@ class App extends React.Component{
 
                     <Route path="/dashboard">
                     <Helmet>
-                        <title>The Linux Point</title>
+                        <title>The Linux Point | Your IT Hub!</title>
                         <meta name="description" content="your it hub ,thelinuxpoint is here" />
                     </Helmet>
                         {Element}

@@ -242,14 +242,17 @@ function NavBar(props) {
             <>
             {/*<canvas id="canvas" ></canvas>*/}
                 <div className="navtop">
-                    <div className="account">
-                        
+                    <div className="nav-left">
+                        <img style={{height:"80px",width:"80px"}}src="https://thelinuxpoint.github.io/thelinuxpoint.png"/>
+                    </div>  
+                    <div className="nav-right">
+
                     </div>
                 </div>
                 <div className="gradient-container">
-                <div draggable={false} className="gradient"></div>
-                 <div draggable={false} className="gradient2"></div>
-                <div draggable={false} className="gradient3"></div>
+                    <div draggable={false} className="gradient"></div>
+                    <div draggable={false} className="gradient2"></div>
+                    <div draggable={false} className="gradient3"></div>
                </div>
             </>
         );
